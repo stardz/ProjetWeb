@@ -1,12 +1,104 @@
-
 body {
-
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+	background-color: #4FC3F7;
 }
-#backHead{
-	background-color: #3f51b5;
-	height: 20%;
+#logoSpace{
+	position:fixed;
+	top:0px;
+	padding-left: 20px;
+	height: 10%;
 }
-#backCenter{
-	background-color: #C5CAE9;
-	height: 80%;
+#logoSpace h1{
+	font-family: ThinGoogle;
+	color: white;
+	height: 100%;
+	margin: 0px;
+	margin-top: 10px;
+}
+header{
+	position:fixed;
+	top:0px;
+	left:0px;
+	background-color: #0288D1;
+	height: 10%;
+	width: 100%;
+}
+nav{
+	position: fixed;
+	top:1%;
+	right: 10px;
+	height:10% ;
+}
+nav ul li{
+	    margin-right:10px;
+		display: inline-block;
+	    padding-bottom: 7px;
+}
+.navCel{
+	color:white;
+	font-family: RegularGoogle;
+	font-size:large;
+	font-size:20px;
+	text-decoration:none;
+	list-style: none;
+}
+nav ul li:hover{
+	border-bottom: 3px #FFFFFF solid;
+}
+/*
+ * Divs modules
+ */
+#modsContainer{
+	position: absolute;
+	top: 10%;
+	width: 100%;
+}
+.moduleDivS{
+	width: 20%;
+	height: 42%;
+	margin: 7px;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.moduleDivS #imagMpsi{
+	display: block;
+	height: 50%;
+}
+.moduleDivS #imagMpsi img{
+	width: 100%;
+	height: 100%;
+}
+.moduleDivS #descMpsi{
+	display: block;
+	background-color: #F44336;
+	margin-top:-22px;
+	color: white;
+	height: 50%;
+	padding: 5px;
+}
+.textDesc{
+	font-family:CondensedGoogle ;
+}
+.titleDesc{
+	font-family:LigthItalicGoogle ;
+}
+/*
+ * Fonts
+ */
+@font-face {
+    font-family: 'RegularGoogle';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'ThinGoogle';
+    src: url('fonts/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: 'CondensedGoogle';
+    src: url('fonts/RobotoCondensed-Light.ttf');
+}
+@font-face {
+    font-family: 'LigthItalicGoogle';
+    src: url('fonts/Roboto-LightItalic.ttf');
 }
