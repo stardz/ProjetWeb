@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	width:100%;
-	background-color: #4FC3F7;
+	background-color: #E1F5FE;
 }
 #logoSpace{
 	position:fixed;
@@ -53,18 +53,18 @@ nav ul li:hover{
  * Divs modules
  */
 #modsContainer{
-	position: absolute;
-	top: 10%;
 	width: 100%;
+	height:100%;
+	padding-top: 100px;
+	padding-left: 100px;
+	vertical-align: top;
 }
 .moduleDivS{
 	width: 20%;
-	height: 42%;
+	height: 343px;
 	margin: 7px;
 	display: inline-block;
-	/*-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	 * 
-	 */
+	vertical-align: top;
 }
 .moduleDivS #imagMpsi{
 	display: block;
@@ -76,12 +76,71 @@ nav ul li:hover{
 }
 .moduleDivS #descMpsi{
 	display: block;
-	background-color: #F44336;
+	background-color: #009688;
 	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
 }
+/*
+ *  SIAD
+ */
+.moduleDivS #imagSiad{
+	display: block;
+	height: 50%;
+}
+.moduleDivS #imagSiad img{
+	width: 100%;
+	height: 100%;
+}
+.moduleDivS #descSiad{
+	display: block;
+	background-color: #673AB7;
+	margin-top:-22px;
+	color: white;
+	height: 50%;
+	padding: 5px;
+}
+/*
+ * ANAD
+ */
+.moduleDivS #imagAnad{
+	display: block;
+	height: 50%;
+}
+.moduleDivS #imagAnad img{
+	width: 100%;
+	height: 100%;
+}
+.moduleDivS #descAnad{
+	display: block;
+	background-color: #9C27B0;
+	margin-top:-22px;
+	color: white;
+	height: 50%;
+	padding: 5px;
+}/*
+  * WEB
+  */
+ .moduleDivS #imagWeb{
+	display: block;
+	height: 50%;
+}
+.moduleDivS #imagWeb img{
+	width: 100%;
+	height: 100%;
+}
+.moduleDivS #descWeb{
+	display: block;
+	background-color: #E91E63;
+	margin-top:-22px;
+	color: white;
+	height: 50%;
+	padding: 5px;
+}
+/*
+ * Style des textes des divs
+ */
 .textDesc{
 	font-family:CondensedGoogle ;
 }
@@ -93,12 +152,10 @@ nav ul li:hover{
  */
 .moduleDivL{
 	width: 40%;
-	height: 42%;
+	height: 343px;
 	margin: 7px;
 	display: inline-block;
-	/*-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	 * 
-	 */
+	vertical-align: top;
 }
 .moduleDivL #imagTICO{
 	display: block;
@@ -110,11 +167,61 @@ nav ul li:hover{
 }
 .moduleDivL #descTico{
 	display: block;
-	background-color: #3F51B5;
+	background-color: #F44336;
 	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
+}
+.moduleDivL #imagBda{
+	display: block;
+	height: 50%;
+}
+.moduleDivL #imagBda img{
+	width: 100%;
+	height: 100%;
+}
+.moduleDivL #descBda{
+	display: block;
+	background-color: #F44336;
+	margin-top:-22px;
+	color: white;
+	height: 50%;
+	padding: 5px;
+}
+/*
+ * Footer
+ */
+footer{
+	background-color: #03A9F4;
+	height: 100px;
+	padding-left: 37%
+}
+footer ul li{
+	
+	padding-top:10px;
+	display: inline-block;
+	margin-left: 5px;
+}
+footer ul li img{
+	width: 50px;
+}
+footer ul{
+    list-style: none;	
+}
+footer h4{
+	color: white;
+	padding-left: 45px;
+	padding-top: 0px; 
+	margin-top: 0px;
+}
+/*
+ * Details des cours
+ */
+#mpsiPlan{
+	height: 814px;
+	width:100%;
+	background-color: #009688;
 }
 /*
  * Fonts
