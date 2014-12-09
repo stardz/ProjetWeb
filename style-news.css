@@ -1,0 +1,246 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #E1F5FE;
+}
+#logoSpace {
+	position: fixed;
+	top: 0px;
+	padding-left: 20px;
+	height: 10%;
+}
+#logoSpace h1 {
+	font-family: ThinGoogle;
+	color: white;
+	height: 100%;
+	margin: 0px;
+	margin-top: 10px;
+}
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #0288D1;
+	height: 10%;
+	width: 100%;
+	z-index: 10;
+}
+nav {
+	position: fixed;
+	top: 1%;
+	right: 10px;
+	height: 10%;
+	z-index: 10;
+}
+nav ul li {
+	margin-right: 10px;
+	display: inline-block;
+	padding-bottom: 7px;
+}
+.navCel {
+	color: white;
+	font-family: RegularGoogle;
+	font-size: large;
+	font-size: 20px;
+	text-decoration: none;
+	list-style: none;
+}
+nav ul li:hover {
+	border-bottom: 3px #FFFFFF solid;
+}
+
+/*
+ * Footer
+ */
+footer {
+	background-color: #03A9F4;
+	height: 100px;
+	padding-left: 37%
+}
+footer ul li {
+
+	padding-top: 10px;
+	display: inline-block;
+	margin-left: 5px;
+}
+footer ul li img {
+	width: 50px;
+}
+footer ul {
+	list-style: none;
+}
+footer h4 {
+	color: white;
+	padding-left: 45px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+/*
+ * Divs modules
+ */
+/*Contenaire Principal*/
+#newsContainer {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+}
+
+/* Div Principal*/
+.divPrincipal {
+
+	float: left;
+	margin-right: 20px;
+	width: 55%;
+	margin-left: 8%;
+	background: rgba(255,255,255,0.7);
+	list-style-type: none;
+	background: #E1F5FE;
+	border-radius: 2px;
+}
+
+.infosEtNouveaute {
+
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
+	border-top: 3px solid rgba(20,20,200,0.8);
+	background: rgba(255,255,255,0.7);
+	padding-bottom: 10px;
+}
+.infosEtNouveaute .imagBack {
+	background-image: url("images/slide1.png");
+	background-size: contain;
+	padding: 100px;
+}
+.enseignements {
+
+	background: rgba(255,255,255,0.7);
+	border-top: 3px solid rgba(200,20,0,0.8);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
+	padding: 15px;
+	margin-top: 12px;
+}
+
+/*******************************************************/
+/*****************************************************************/
+/*Div Secondaire*/
+.divSecondaire {
+	float: right;
+	list-style-type: none;
+	background: #E1F5FE;
+	border-radius: 2px;
+	width: 25%;
+	display: block;
+	margin-right: 8%;
+}
+
+.offres {
+	background: rgba(255,255,255,0.7);
+	border-top: 3px solid rgba(200,20,0,0.8);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
+	padding: 10px;
+}
+
+.enRelation {
+	background: rgba(255,255,255,0.7);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
+	padding: 15px;
+	margin-top: 12px;
+}
+
+.divSecondaire > :nth-child(2) {
+	border-top: 3px solid rgba(22,20,0,0.5);
+}
+
+#descOffres ul {
+	font-family: LigthItalicGoogle;
+	list-style-type: none;
+}
+
+#descOffres li {
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-color: #8A8A8A;
+}
+
+.imagBack {
+
+}
+.textDesc {
+	font-family: CondensedGoogle;
+	padding-left: 20px;
+}
+.titleDesc {
+	font-family: LigthItalicGoogle;
+	padding-left: 20px;
+}
+
+.imagBack {
+	background-image: }
+
+	/*
+	* Fonts
+	*/
+	@font-face {
+	font-family: 'RegularGoogle';
+	src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'ThinGoogle';
+	src: url('fonts/Roboto-Thin.ttf');
+}
+@font-face {
+	font-family: 'CondensedGoogle';
+	src: url('fonts/RobotoCondensed-Light.ttf');
+}
+@font-face {
+	font-family: 'LigthItalicGoogle';
+	src: url('fonts/Roboto-LightItalic.ttf');
+}
+
+.clear {
+	clear: both;
+	height: 60px;
+}
+
+/*
+ * Footer
+ */
+footer {
+	background-color: #03A9F4;
+	height: 100px;
+	padding-left: 37%
+}
+footer ul li {
+
+	padding-top: 10px;
+	margin-left: 5px;
+	display: inline-block;
+}
+footer ul li img {
+	width: 50px;
+}
+footer ul {
+	list-style: none;
+}
+footer h4 {
+	color: white;
+	padding-left: 45px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.list-group-item {
+	font-family: LigthItalicGoogle;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333;
+}
+
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	border-bottom	: 1px solid #ddd;
+}
