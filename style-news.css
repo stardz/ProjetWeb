@@ -229,4 +229,18 @@ footer h4 {
 	padding-top: 0px;
 	margin-top: 0px;
 }
+.list-group-item {
+	font-family: LigthItalicGoogle;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333;
+}
 
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	border-bottom	: 1px solid #ddd;
+}
