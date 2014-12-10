@@ -170,8 +170,7 @@ footer h4 {
 	padding-left: 20px;
 }
 
-.imagBack {
-	background-image: }
+
 
 	/*
 	* Fonts
@@ -198,32 +197,6 @@ footer h4 {
 	height: 60px;
 }
 
-/*
- * Footer
- */
-footer {
-	background-color: #03A9F4;
-	height: 100px;
-	padding-left: 37%
-}
-footer ul li {
-
-	padding-top: 10px;
-	margin-left: 5px;
-	display: inline-block;
-}
-footer ul li img {
-	width: 50px;
-}
-footer ul {
-	list-style: none;
-}
-footer h4 {
-	color: white;
-	padding-left: 45px;
-	padding-top: 0px;
-	margin-top: 0px;
-}
 .list-group-item {
 	font-family: LigthItalicGoogle;
 	padding-left: 20px;
