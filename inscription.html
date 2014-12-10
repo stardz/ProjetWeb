@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Inscription</title>
+		<link href="inscription.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+	<body>
+
+		<div id="backCenter">
+
+			<header>
+				<div id="logoSpace">
+					<h1>E-Learning</h1>
+				</div>
+				<div id="searchSpace">
+
+				</div>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="#" class="navCel">Acceuil</a>
+					</li>
+					<li>
+						<a href="#" class="navCel">News</a>
+					</li>
+					<li>
+						<a href="#" class="navCel">Cours</a>
+					</li>
+					<li>
+						<a href="#" class="navCel">Exercices</a>
+					</li>
+					<li>
+						<a href="#" class="navCel">Telechargement</a>
+					</li>
+					<li>
+						<a href="#" class="navCel">Inscriptions</a>
+					</li>
+					<li>
+						<a href="#" class="navCel">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="contactContainer">
+				<div class="divPrincipal">
+
+					<div class="formulaire">
+						<div id="descFormulaire">
+							<h3 class="titleDesc">Inscription</h3>
+							<form method="post" action="" role="form">
+								<input type="hidden" name="csrfmiddlewaretoken" value="AF7S7DimieUWZ1G486h7g4HFK8AXlSie">
+
+								<div class="form-group">
+									<label for="choix_cours">Choisir le cours</label>
+									<select class="form-control" id="choixCours" name="wilaya">
+										<option value="1">BDD avancées</option>
+										<option value="2">Analyse des données</option>
+										<option value="3">Systemes AD</option>
+										<option value="4">Management des changements</option>
+										<option value="5">TIC en Organisation</option>
+
+										<option value="6" selected="selected">Developpement WEB</option>
+									</select>
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_first_name">First name:</label>
+									<input class="form-control" id="id_first_name" required="required"  maxlength="255" name="first_name" type="text">
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_last_name">Last name:</label>
+									<input class="form-control" id="id_last_name" required="required" maxlength="255" name="last_name" type="text">
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_date_naissance">Date de naissance:</label>
+									<input class="form-control" type="date" name="dnaiss" required="true"  />
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_adresse_postale">Adresse postale:</label>
+									<input class="form-control" id="id__ad_postale" maxlength="255" required="required" name="adresse_postale" type="text">
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_email">Email:</label>
+									<input class="form-control" id="id_email" maxlength="75" required="required" name="email" type="email">
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_phone">N° Téléphone:</label>
+									<input class="form-control" pattern="[0-9]+" id="id_phone" maxlength="255" required="required" name="phone" type="tel">
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_country">Situation familiale:</label>
+									<select class="form-control" id="situation_familiale" required="required" name="type cours">
+										<option value="1">Marrié</option>
+										<option value="2">Divorcé</option>
+										<option value="3">Célibataire</option>
+
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="type_cours">Type de cours</label>
+									<select class="form-control" id="typeCours" name="type cours">
+										<option value="1">Normal</option>
+										<option value="2">Accélérér</option>
+										<option value="3">Cours de soir</option>
+
+									</select>
+
+								</div>
+
+								<div class="form-group">
+									<label for="id_national">N° identification nationale:</label>
+									<input class="form-control"  id="id_national" maxlength="255" required="required" name="phone" type="number">
+
+								</div>
+
+								<div class="pull-right">
+									<button type="submit" class="btn btn-success">
+										Send
+									</button>
+								</div>
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div class="divSecondaire">
+					<div class="inscrInfos">
+
+						<div id="descInfo">
+							<h3 class="titleDesc">Informations sur l'inscription</h3>
+							<div class="container">
+								<h4>Prix de formation</h4>
+
+								<h4>Prix de l'inscription</h4>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="clear"></div>
+		<footer>
+			<ul>
+				<li>
+					<a href="#"><img src="images/fbook.png" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/twitter.png" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/gplus.png" /></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/youtube.png" /></a>
+				</li>
+			</ul>
+			<h4>© Tous droits réservés 2014-2015</h4>
+		</footer>
+		</div>
+
+	</body>
+</html>
