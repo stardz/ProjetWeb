@@ -54,10 +54,14 @@ nav ul li:hover{
 	display: inline-block;
 	width: 40%;
 }
-
+/*
+ * Modules div
+ */
 /*
  * Tico div
 */
+#globalDiv{
+}
 .divsMod{
 	width: 40%;
 	right: 0px;
@@ -100,14 +104,14 @@ nav ul li:hover{
 }
 /*
   * General Accordion****************************************************************************/
-/*Slide ouvert*/
+/*Slide ferme*/
 .accordion section:target { background:#E0F2F1; }
 .accordion section:target:hover { background:#E0F2F1; }
 .accordion section:target h2 {width:100%;padding-left: 5px;}
 .accordion section:target h2 a{ color:#333; padding:0;}
 .accordion section:target p {display:block;}
 .accordion section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:bold;color:#eee; text-decoration:none; font-family:CondensedGoogle;}
-/*slide open*/
+/*slide ouvert*/
 .accordion section{ float:left;	overflow:hidden; color:#333; cursor:pointer; background: #4DB6AC;margin: 3px;padding-left: 7px; }
 .accordion section:hover {background:#444;}
 .accordion section p { display:none; }
