@@ -192,8 +192,12 @@ form {
 }
 
 #typeCours {
+	height: 35px;typepaiement
+}
+#typepaiement {
 	height: 35px;
 }
+
 #situation_familiale {
 	height: 35px;
 }
