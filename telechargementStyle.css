@@ -4,52 +4,56 @@ body {
 	padding-top:100px;
 	width:100%;
 	background-color: #E1F5FE;
+	
 }
-#logoSpace{
-	position:fixed;
-	top:0px;
+#logoSpace {
+	position: fixed;
+	top: 0px;
 	padding-left: 20px;
 	height: 10%;
 }
-#logoSpace h1{
+#logoSpace h1 {
 	font-family: ThinGoogle;
 	color: white;
 	height: 100%;
 	margin: 0px;
 	margin-top: 10px;
 }
-header{
-	position:fixed;
-	top:0px;
-	left:0px;
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
 	background-color: #0288D1;
 	height: 10%;
 	width: 100%;
 	z-index: 10;
 }
-nav{
+
+
+nav {
 	position: fixed;
-	top:1%;
+	top: 1%;
 	right: 10px;
-	height:10% ;
+	height: 10%;
 	z-index: 10;
 }
-nav ul li{
-	    margin-right:10px;
-		display: inline-block;
-	    padding-bottom: 7px;
+nav ul li {
+	margin-right: 10px;
+	display: inline-block;
+	padding-bottom: 7px;
 }
-.navCel{
-	color:white;
+.navCel {
+	color: white;
 	font-family: RegularGoogle;
-	font-size:large;
-	font-size:20px;
-	text-decoration:none;
+	font-size: large;
+	font-size: 20px;
+	text-decoration: none;
 	list-style: none;
 }
-nav ul li:hover{
+nav ul li:hover {
 	border-bottom: 3px #FFFFFF solid;
 }
+
 #container{
 	vertical-align: top;
 }
@@ -179,7 +183,7 @@ ol.tree
 	padding: 0 0 0 30px;
 	width: 300px;
 }
-	li 
+ol	li 
 	{ 
 		position: relative; 
 		margin-left: -15px;

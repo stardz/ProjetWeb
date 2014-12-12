@@ -1,61 +1,56 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	padding-top: 100px;
-	width: 100%;
+	padding-top:100px;
+	width:100%;
 	background-color: #E1F5FE;
 }
-#backCenter {
-	position: fixed;
-	top: 0;
-}
-
-#logoSpace {
-	position: fixed;
-	top: 0px;
+#logoSpace{
+	position:fixed;
+	top:0px;
 	padding-left: 20px;
 	height: 10%;
 }
-#logoSpace h1 {
+#logoSpace h1{
 	font-family: ThinGoogle;
 	color: white;
 	height: 100%;
 	margin: 0px;
 	margin-top: 10px;
 }
-header {
-	position: fixed;
-	top: 0px;
-	left: 0px;
+header{
+	position:fixed;
+	top:0px;
+	left:0px;
 	background-color: #0288D1;
 	height: 10%;
 	width: 100%;
 	z-index: 10;
 }
-nav {
+nav{
 	position: fixed;
-	top: 1%;
+	top:1%;
 	right: 10px;
-	height: 10%;
+	height:10% ;
 	z-index: 10;
 }
-nav ul li {
-	margin-right: 10px;
-	display: inline-block;
-	padding-bottom: 7px;
+nav ul li{
+	    margin-right:10px;
+		display: inline-block;
+	    padding-bottom: 7px;
 }
-.navCel {
-	color: white;
+.navCel{
+	color:white;
 	font-family: RegularGoogle;
-	font-size: large;
-	font-size: 20px;
-	text-decoration: none;
+	font-size:large;
+	font-size:20px;
+	text-decoration:none;
 	list-style: none;
 }
-nav ul li:hover {
+nav ul li:hover{
 	border-bottom: 3px #FFFFFF solid;
 }
-.divsMod {
+.divsMod{
 	display: inline-block;
 	width: 40%;
 }
@@ -64,829 +59,466 @@ nav ul li:hover {
  */
 /*
  * Tico div
- */
-#globalDiv {
+*/
+#globalDiv{
 }
-.divsMod {
-	position:fixed;
-	margin-top:80px;
+.divsMod{
 	width: 40%;
 	right: 0px;
 	display: inline-block;
 }
-.accordion {
-	padding-top: 5px;
-	width: 870px;
-	height: 343px;
+.accordion{
+	padding-top:5px;
+	width:870px;
+	height:343px;
 	display: inline-block;
 }
 
-#divMpsi {
+#divMpsi{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align:top;
 	padding-left: 100px;
 }
-.moduleDivS {
+.moduleDivS{
 	width: 290px;
 	height: 343px;
 	margin: 7px;
 	display: inline-block;
 	vertical-align: top;
 }
-.moduleDivS #imagMpsi {
+.moduleDivS #imagMpsi{
 	display: block;
 	height: 50%;
 }
-.moduleDivS #imagMpsi img {
+.moduleDivS #imagMpsi img{
 	width: 100%;
 	height: 100%;
 }
-.moduleDivS #descMpsi {
+.moduleDivS #descMpsi{
 	display: block;
 	background-color: #009688;
-	margin-top: -22px;
+	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
 }
 /*
- * General Accordion****************************************************************************/
+  * General Accordion****************************************************************************/
 /*Slide ferme*/
-.accordion section:target {
-	background: #E0F2F1;
-}
-.accordion section:target:hover {
-	background: #E0F2F1;
-}
-.accordion section:target h2 {
-	width: 100%;
-	padding-left: 5px;
-}
-.accordion section:target h2 a {
-	color: #333;
-	padding: 0;
-}
-.accordion section:target p {
-	display: block;
-}
-.accordion section h2 a {
-	padding: 8px 10px;
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	color: #eee;
-	text-decoration: none;
-	font-family: CondensedGoogle;
-}
+.accordion section:target { background:#E0F2F1; }
+.accordion section:target:hover { background:#E0F2F1; }
+.accordion section:target h2 {width:100%;padding-left: 5px;}
+.accordion section:target h2 a{ color:#333; padding:0;}
+.accordion section:target p {display:block;}
+.accordion section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:bold;color:#eee; text-decoration:none; font-family:CondensedGoogle;}
 /*slide ouvert*/
-.accordion section {
-	float: left;
-	overflow: hidden;
-	color: #333;
-	cursor: pointer;
-	background: #4DB6AC;
-	margin: 3px;
-	padding-left: 7px;
-}
-.accordion section:hover {
-	background: #444;
-}
-.accordion section p {
-	display: none;
-}
-.accordion section:after {
-	position: relative;
-	font-size: 24px;
-	color: #000;
-	font-weight: bold;
-}
-.accordion section:nth-child(1):after {
-	content: '1';
-}
-.accordion section:nth-child(2):after {
-	content: '2';
-}
-.accordion section:nth-child(3):after {
-	content: '3';
-}
-.accordion section:nth-child(4):after {
-	content: '4';
-}
-.accordion section:nth-child(5):after {
-	content: '5';
-}
+.accordion section{ float:left;	overflow:hidden; color:#333; cursor:pointer; background: #4DB6AC;margin: 3px;padding-left: 7px; }
+.accordion section:hover {background:#444;}
+.accordion section p { display:none; }
+.accordion section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
+.accordion section:nth-child(1):after{content:'1';}
+.accordion section:nth-child(2):after{content:'2';}
+.accordion section:nth-child(3):after{content:'3';}
+.accordion section:nth-child(4):after{content:'4';}
+.accordion section:nth-child(5):after{content:'5';}
 /*fin de l'accordion general****************************************************************************/
 /*Accordion vertical *************************************************************************/
-.vertical section {
-	width: 100%;
-	height: 48px;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+.vertical section{ width:100%; height:48px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;
 }
 /*longueure du slide*/
-.vertical :target {
-	height: 114px;
-	width: 100%;
-}
+.vertical :target{ height:114px; width:100%; }
 
-.vertical section h2 {
-	position: relative;
-	left: 0;
-	top: -15px;
-}
+.vertical section h2 { position:relative; left:0; top:-15px; }
 
 /*position du nombre de slide*/
-.vertical section:after {
-	top: -60px;
-	left: 810px;
-}
-.vertical section:target:after {
-	left: -9999px;
-}
+.vertical section:after{ top:-60px;left:810px;}
+.vertical section:target:after{ left:-9999px;}
 /*
  * Tico
  */
-.accordion1 {
-	padding-top: 5px;
-	padding-right: 15px;
-	width: 870px;
-	height: 343px;
+.accordion1{
+	padding-top:5px;
+	padding-right:15px;
+	width:870px;
+	height:343px;
 	display: inline-block;
 }
-#divTico {
+#divTico{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align:top;
 	padding-left: 100px;
 	margin-top: 100px;
+	
 }
-.moduleDivS #imagTICO {
+.moduleDivS #imagTICO{
 	display: block;
 	height: 50%;
 }
-.moduleDivS #imagTICO img {
+.moduleDivS #imagTICO img{
 	width: 100%;
 	height: 100%;
 }
-.moduleDivS #descTico {
+.moduleDivS #descTico{
 	display: block;
 	background-color: #F44336;
-	margin-top: -22px;
+	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
 }
-/*
- * General Accordion****************************************************************************/
+ /*
+  * General Accordion****************************************************************************/
 /*Slide ouvert*/
-.accordion1 section:target {
-	background: #FFEBEE;
-}
-.accordion1 section:target:hover {
-	background: #FFEBEE;
-}
-.accordion1 section:target h2 {
-	width: 100%;
-	padding-left: 5px;
-}
-.accordion1 section:target h2 a {
-	color: #333;
-	padding: 0;
-}
-.accordion1 section:target p {
-	display: block;
-}
-.accordion1 section h2 a {
-	padding: 8px 10px;
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	color: #eee;
-	text-decoration: none;
-	font-family: CondensedGoogle;
-}
+.accordion1 section:target { background:#FFEBEE; }
+.accordion1 section:target:hover { background:#FFEBEE; }
+.accordion1 section:target h2 {width:100%;padding-left: 5px;}
+.accordion1 section:target h2 a{ color:#333; padding:0;}
+.accordion1 section:target p {display:block;}
+.accordion1 section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:bold;color:#eee; text-decoration:none; font-family:CondensedGoogle;}
 /*slide open*/
-.accordion1 section {
-	float: left;
-	overflow: hidden;
-	color: #333;
-	cursor: pointer;
-	background: #E57373;
-	margin: 3px;
-	padding-left: 7px;
-}
-.accordion1 section:hover {
-	background: #444;
-}
-.accordion1 section p {
-	display: none;
-}
-.accordion1 section:after {
-	position: relative;
-	font-size: 24px;
-	color: #000;
-	font-weight: bold;
-}
-.accordion1 section:nth-child(1):after {
-	content: '1';
-}
-.accordion1 section:nth-child(2):after {
-	content: '2';
-}
-.accordion1 section:nth-child(3):after {
-	content: '3';
-}
-.accordion1 section:nth-child(4):after {
-	content: '4';
-}
-.accordion1 section:nth-child(5):after {
-	content: '5';
-}
+.accordion1 section{ float:left;	overflow:hidden; color:#333; cursor:pointer; background: #E57373;margin: 3px;padding-left: 7px; }
+.accordion1 section:hover {background:#444;}
+.accordion1 section p { display:none; }
+.accordion1 section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
+.accordion1 section:nth-child(1):after{content:'1';}
+.accordion1 section:nth-child(2):after{content:'2';}
+.accordion1 section:nth-child(3):after{content:'3';}
+.accordion1 section:nth-child(4):after{content:'4';}
+.accordion1 section:nth-child(5):after{content:'5';}
 /*fin de l'accordion general****************************************************************************/
 /*Accordion vertical *************************************************************************/
-.vertical1 section {
-	width: 100%;
-	height: 48px;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+.vertical1 section{ width:100%; height:48px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;
 }
 /*longueure du slide*/
-.vertical1 :target {
-	height: 114px;
-	width: 100%;
-}
+.vertical1 :target{ height:114px; width:100%; }
 
-.vertical1 section h2 {
-	position: relative;
-	left: 0;
-	top: -15px;
-}
+.vertical1 section h2 { position:relative; left:0; top:-15px; }
 
 /*position du nombre de slide*/
-.vertical1 section:after {
-	top: -60px;
-	left: 810px;
-}
-.vertical1 section:target:after {
-	left: -9999px;
-}
+.vertical1 section:after{ top:-60px;left:810px;}
+.vertical1 section:target:after{ left:-9999px;}
 /*
  * Web
  */
-.accordion2 {
-	padding-top: 5px;
-	padding-right: 15px;
-	width: 870px;
-	height: 343px;
+.accordion2{
+	padding-top:5px;
+	padding-right:15px;
+	width:870px;
+	height:343px;
 	display: inline-block;
 }
-.moduleDivS #imagWeb {
+.moduleDivS #imagWeb{
 	display: block;
 	height: 50%;
 }
-.moduleDivS #imagWeb img {
+.moduleDivS #imagWeb img{
 	width: 100%;
 	height: 100%;
 }
-.moduleDivS #descWeb {
+.moduleDivS #descWeb{
 	display: block;
 	background-color: #E91E63;
-	margin-top: -22px;
+	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
 }
-#divWeb {
+#divWeb{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align:top;
 	padding-left: 100px;
 	margin-top: 100px;
+	
 }
-/*
- * General Accordion****************************************************************************/
+ /*
+  * General Accordion****************************************************************************/
 /*Slide ouvert*/
-.accordion2 section:target {
-	background: #FCE4EC;
-}
-.accordion2 section:target:hover {
-	background: #FCE4EC;
-}
-.accordion2 section:target h2 {
-	width: 100%;
-	padding-left: 5px;
-}
-.accordion2 section:target h2 a {
-	color: #333;
-	padding: 0;
-}
-.accordion2 section:target p {
-	display: block;
-}
-.accordion2 section h2 a {
-	padding: 8px 10px;
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	color: #eee;
-	text-decoration: none;
-	font-family: CondensedGoogle;
-}
+.accordion2 section:target { background:#FCE4EC; }
+.accordion2 section:target:hover { background:#FCE4EC; }
+.accordion2 section:target h2 {width:100%;padding-left: 5px;}
+.accordion2 section:target h2 a{ color:#333; padding:0;}
+.accordion2 section:target p {display:block;}
+.accordion2 section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:bold;color:#eee; text-decoration:none; font-family:CondensedGoogle;}
 /*slide open*/
-.accordion2 section {
-	float: left;
-	overflow: hidden;
-	color: #333;
-	cursor: pointer;
-	background: #F06292;
-	margin: 3px;
-	padding-left: 7px;
-}
-.accordion2 section:hover {
-	background: #444;
-}
-.accordion2 section p {
-	display: none;
-}
-.accordion2 section:after {
-	position: relative;
-	font-size: 24px;
-	color: #000;
-	font-weight: bold;
-}
-.accordion2 section:nth-child(1):after {
-	content: '1';
-}
-.accordion2 section:nth-child(2):after {
-	content: '2';
-}
-.accordion2 section:nth-child(3):after {
-	content: '3';
-}
-.accordion2 section:nth-child(4):after {
-	content: '4';
-}
-.accordion2 section:nth-child(5):after {
-	content: '5';
-}
+.accordion2 section{ float:left;	overflow:hidden; color:#333; cursor:pointer; background: #F06292;margin: 3px;padding-left: 7px; }
+.accordion2 section:hover {background:#444;}
+.accordion2 section p { display:none; }
+.accordion2 section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
+.accordion2 section:nth-child(1):after{content:'1';}
+.accordion2 section:nth-child(2):after{content:'2';}
+.accordion2 section:nth-child(3):after{content:'3';}
+.accordion2 section:nth-child(4):after{content:'4';}
+.accordion2 section:nth-child(5):after{content:'5';}
 /*fin de l'accordion general****************************************************************************/
 /*Accordion vertical *************************************************************************/
-.vertical2 section {
-	width: 100%;
-	height: 48px;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+.vertical2 section{ width:100%; height:48px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;
 }
 /*longueure du slide*/
-.vertical2 :target {
-	height: 114px;
-	width: 100%;
-}
+.vertical2 :target{ height:114px; width:100%; }
 
-.vertical2 section h2 {
-	position: relative;
-	left: 0;
-	top: -15px;
-}
+.vertical2 section h2 { position:relative; left:0; top:-15px; }
 
 /*position du nombre de slide*/
-.vertical2 section:after {
-	top: -60px;
-	left: 810px;
-}
-.vertical2 section:target:after {
-	left: -9999px;
-}
+.vertical2 section:after{ top:-60px;left:810px;}
+.vertical2 section:target:after{ left:-9999px;}
 /*
  * Siad
  */
-.accordion3 {
-	padding-top: 5px;
-	padding-right: 15px;
-	width: 870px;
-	height: 343px;
+.accordion3{
+	padding-top:5px;
+	padding-right:15px;
+	width:870px;
+	height:343px;
 	display: inline-block;
 }
-.moduleDivS #imagSiad {
+.moduleDivS #imagSiad{
 	display: block;
 	height: 50%;
 }
-.moduleDivS #imagSiad img {
+.moduleDivS #imagSiad img{
 	width: 100%;
 	height: 100%;
 }
-.moduleDivS #descSiad {
+.moduleDivS #descSiad{
 	display: block;
 	background-color: #673AB7;
-	margin-top: -22px;
+	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
 }
-#divSiad {
+#divSiad{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align:top;
 	padding-left: 100px;
 	margin-top: 100px;
+	
 }
 
-/*
- * General Accordion****************************************************************************/
+ /*
+  * General Accordion****************************************************************************/
 /*Slide ouvert*/
-.accordion3 section:target {
-	background: #EDE7F6;
-}
-.accordion3 section:target:hover {
-	background: #EDE7F6;
-}
-.accordion3 section:target h2 {
-	width: 100%;
-	padding-left: 5px;
-}
-.accordion3 section:target h2 a {
-	color: #333;
-	padding: 0;
-}
-.accordion3 section:target p {
-	display: block;
-}
-.accordion3 section h2 a {
-	padding: 8px 10px;
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	color: #eee;
-	text-decoration: none;
-	font-family: CondensedGoogle;
-}
+.accordion3 section:target { background:#EDE7F6; }
+.accordion3 section:target:hover { background:#EDE7F6; }
+.accordion3 section:target h2 {width:100%;padding-left: 5px;}
+.accordion3 section:target h2 a{ color:#333; padding:0;}
+.accordion3 section:target p {display:block;}
+.accordion3 section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:bold;color:#eee; text-decoration:none; font-family:CondensedGoogle;}
 /*slide open*/
-.accordion3 section {
-	float: left;
-	overflow: hidden;
-	color: #333;
-	cursor: pointer;
-	background: #9575CD;
-	margin: 3px;
-	padding-left: 7px;
-}
-.accordion3 section:hover {
-	background: #444;
-}
-.accordion3 section p {
-	display: none;
-}
-.accordion3 section:after {
-	position: relative;
-	font-size: 24px;
-	color: #000;
-	font-weight: bold;
-}
-.accordion3 section:nth-child(1):after {
-	content: '1';
-}
-.accordion3 section:nth-child(2):after {
-	content: '2';
-}
-.accordion3 section:nth-child(3):after {
-	content: '3';
-}
-.accordion3 section:nth-child(4):after {
-	content: '4';
-}
-.accordion3 section:nth-child(5):after {
-	content: '5';
-}
+.accordion3 section{ float:left;	overflow:hidden; color:#333; cursor:pointer; background: #9575CD;margin: 3px;padding-left: 7px; }
+.accordion3 section:hover {background:#444;}
+.accordion3 section p { display:none; }
+.accordion3 section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
+.accordion3 section:nth-child(1):after{content:'1';}
+.accordion3 section:nth-child(2):after{content:'2';}
+.accordion3 section:nth-child(3):after{content:'3';}
+.accordion3 section:nth-child(4):after{content:'4';}
+.accordion3 section:nth-child(5):after{content:'5';}
 /*fin de l'accordion general****************************************************************************/
 /*Accordion vertical *************************************************************************/
-.vertical3 section {
-	width: 100%;
-	height: 48px;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+.vertical3 section{ width:100%; height:48px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;
 }
 /*longueure du slide*/
-.vertical3 :target {
-	height: 114px;
-	width: 100%;
-}
+.vertical3 :target{ height:114px; width:100%; }
 
-.vertical3 section h2 {
-	position: relative;
-	left: 0;
-	top: -15px;
-}
+.vertical3 section h2 { position:relative; left:0; top:-15px; }
 
 /*position du nombre de slide*/
-.vertical3 section:after {
-	top: -60px;
-	left: 810px;
-}
-.vertical3 section:target:after {
-	left: -9999px;
-}
+.vertical3 section:after{ top:-60px;left:810px;}
+.vertical3 section:target:after{ left:-9999px;}
 /*
  * Anad
  */
-.accordion4 {
-	padding-top: 5px;
-	padding-right: 15px;
-	width: 870px;
-	height: 343px;
+.accordion4{
+	padding-top:5px;
+	padding-right:15px;
+	width:870px;
+	height:343px;
 	display: inline-block;
 }
-.moduleDivS #imagAnad {
+.moduleDivS #imagAnad{
 	display: block;
 	height: 50%;
 }
-.moduleDivS #imagAnad img {
+.moduleDivS #imagAnad img{
 	width: 100%;
 	height: 100%;
 }
-.moduleDivS #descAnad {
+.moduleDivS #descAnad{
 	display: block;
 	background-color: #9C27B0;
-	margin-top: -22px;
+	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
 }
-#divAnad {
+#divAnad{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align:top;
 	padding-left: 100px;
 	margin-top: 100px;
+	
 }
 
-/*
- * General Accordion****************************************************************************/
+ /*
+  * General Accordion****************************************************************************/
 /*Slide ouvert*/
-.accordion4 section:target {
-	background: #F3E5F5;
-}
-.accordion4 section:target:hover {
-	background: #F3E5F5;
-}
-.accordion4 section:target h2 {
-	width: 100%;
-	padding-left: 5px;
-}
-.accordion4 section:target h2 a {
-	color: #333;
-	padding: 0;
-}
-.accordion4 section:target p {
-	display: block;
-}
-.accordion4 section h2 a {
-	padding: 8px 10px;
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	color: #eee;
-	text-decoration: none;
-	font-family: CondensedGoogle;
-}
+.accordion4 section:target { background:#F3E5F5; }
+.accordion4 section:target:hover { background:#F3E5F5; }
+.accordion4 section:target h2 {width:100%;padding-left: 5px;}
+.accordion4 section:target h2 a{ color:#333; padding:0;}
+.accordion4 section:target p {display:block;}
+.accordion4 section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:bold;color:#eee; text-decoration:none; font-family:CondensedGoogle;}
 /*slide open*/
-.accordion4 section {
-	float: left;
-	overflow: hidden;
-	color: #333;
-	cursor: pointer;
-	background: #BA68C8;
-	margin: 3px;
-	padding-left: 7px;
-}
-.accordion4 section:hover {
-	background: #444;
-}
-.accordion4 section p {
-	display: none;
-}
-.accordion4 section:after {
-	position: relative;
-	font-size: 24px;
-	color: #000;
-	font-weight: bold;
-}
-.accordion4 section:nth-child(1):after {
-	content: '1';
-}
-.accordion4 section:nth-child(2):after {
-	content: '2';
-}
-.accordion4 section:nth-child(3):after {
-	content: '3';
-}
-.accordion4 section:nth-child(4):after {
-	content: '4';
-}
-.accordion4 section:nth-child(5):after {
-	content: '5';
-}
+.accordion4 section{ float:left;	overflow:hidden; color:#333; cursor:pointer; background: #BA68C8;margin: 3px;padding-left: 7px; }
+.accordion4 section:hover {background:#444;}
+.accordion4 section p { display:none; }
+.accordion4 section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
+.accordion4 section:nth-child(1):after{content:'1';}
+.accordion4 section:nth-child(2):after{content:'2';}
+.accordion4 section:nth-child(3):after{content:'3';}
+.accordion4 section:nth-child(4):after{content:'4';}
+.accordion4 section:nth-child(5):after{content:'5';}
 /*fin de l'accordion general****************************************************************************/
 /*Accordion vertical *************************************************************************/
-.vertical4 section {
-	width: 100%;
-	height: 48px;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+.vertical4 section{ width:100%; height:48px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;
 }
 /*longueure du slide*/
-.vertical4 :target {
-	height: 114px;
-	width: 100%;
-}
+.vertical4 :target{ height:114px; width:100%; }
 
-.vertical4 section h2 {
-	position: relative;
-	left: 0;
-	top: -15px;
-}
+.vertical4 section h2 { position:relative; left:0; top:-15px; }
 
 /*position du nombre de slide*/
-.vertical4 section:after {
-	top: -60px;
-	left: 810px;
-}
-.vertical4 section:target:after {
-	left: -9999px;
-}
+.vertical4 section:after{ top:-60px;left:810px;}
+.vertical4 section:target:after{ left:-9999px;}
 /*
  * Bda
  */
-.accordion5 {
-	padding-top: 5px;
-	padding-right: 15px;
-	width: 870px;
-	height: 343px;
+.accordion5{
+	padding-top:5px;
+	padding-right:15px;
+	width:870px;
+	height:343px;
 	display: inline-block;
 }
-.moduleDivS #imagBda {
+.moduleDivS #imagBda{
 	display: block;
 	height: 50%;
 }
-.moduleDivS #imagBda img {
+.moduleDivS #imagBda img{
 	width: 100%;
 	height: 100%;
 }
-.moduleDivS #descBda {
+.moduleDivS #descBda{
 	display: block;
 	background-color: #F44336;
-	margin-top: -22px;
+	margin-top:-22px;
 	color: white;
 	height: 50%;
 	padding: 5px;
 }
-#divBdd {
+#divBdd{
 	display: inline-block;
-	vertical-align: top;
+	vertical-align:top;
 	padding-left: 100px;
 	margin-top: 100px;
+	
 }
 
-/*
- * General Accordion****************************************************************************/
+ /*
+  * General Accordion****************************************************************************/
 /*Slide ouvert*/
-.accordion5 section:target {
-	background: #FFEBEE;
-}
-.accordion5 section:target:hover {
-	background: #FFEBEE;
-}
-.accordion5 section:target h2 {
-	width: 100%;
-	padding-left: 5px;
-}
-.accordion5 section:target h2 a {
-	color: #333;
-	padding: 0;
-}
-.accordion5 section:target p {
-	display: block;
-}
-.accordion5 section h2 a {
-	padding: 8px 10px;
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	color: #eee;
-	text-decoration: none;
-	font-family: CondensedGoogle;
-}
+.accordion5 section:target { background:#FFEBEE; }
+.accordion5 section:target:hover { background:#FFEBEE; }
+.accordion5 section:target h2 {width:100%;padding-left: 5px;}
+.accordion5 section:target h2 a{ color:#333; padding:0;}
+.accordion5 section:target p {display:block;}
+.accordion5 section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:bold;color:#eee; text-decoration:none; font-family:CondensedGoogle;}
 /*slide open*/
-.accordion5 section {
-	float: left;
-	overflow: hidden;
-	color: #333;
-	cursor: pointer;
-	background: #E57373;
-	margin: 3px;
-	padding-left: 7px;
-}
-.accordion5 section:hover {
-	background: #444;
-}
-.accordion5 section p {
-	display: none;
-}
-.accordion5 section:after {
-	position: relative;
-	font-size: 24px;
-	color: #000;
-	font-weight: bold;
-}
-.accordion5 section:nth-child(1):after {
-	content: '1';
-}
-.accordion5 section:nth-child(2):after {
-	content: '2';
-}
-.accordion5 section:nth-child(3):after {
-	content: '3';
-}
-.accordion5 section:nth-child(4):after {
-	content: '4';
-}
-.accordion5 section:nth-child(5):after {
-	content: '5';
-}
+.accordion5 section{ float:left;	overflow:hidden; color:#333; cursor:pointer; background: #E57373;margin: 3px;padding-left: 7px; }
+.accordion5 section:hover {background:#444;}
+.accordion5 section p { display:none; }
+.accordion5 section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
+.accordion5 section:nth-child(1):after{content:'1';}
+.accordion5 section:nth-child(2):after{content:'2';}
+.accordion5 section:nth-child(3):after{content:'3';}
+.accordion5 section:nth-child(4):after{content:'4';}
+.accordion5 section:nth-child(5):after{content:'5';}
 /*fin de l'accordion general****************************************************************************/
 /*Accordion vertical *************************************************************************/
-.vertical5 section {
-	width: 100%;
-	height: 48px;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+.vertical5 section{ width:100%; height:48px;
+	-webkit-transition:height 0.2s ease-out;
+	-moz-transition:height 0.2s ease-out;
+  	-o-transition:height 0.2s ease-out;
+	-ms-transition:height 0.2s ease-out;
+  	transition:height 0.2s ease-out;
 }
 /*longueure du slide*/
-.vertical5 :target {
-	height: 114px;
-	width: 100%;
-}
+.vertical5 :target{ height:114px; width:100%; }
 
-.vertical5 section h2 {
-	position: relative;
-	left: 0;
-	top: -15px;
-}
+.vertical5 section h2 { position:relative; left:0; top:-15px; }
 
 /*position du nombre de slide*/
-.vertical5 section:after {
-	top: -60px;
-	left: 810px;
-}
-.vertical5 section:target:after {
-	left: -9999px;
-}
+.vertical5 section:after{ top:-60px;left:810px;}
+.vertical5 section:target:after{ left:-9999px;}
 /*
  * Style des textes des divs
  */
-.textDesc {
-	font-family: CondensedGoogle;
+.textDesc{
+	font-family:CondensedGoogle ;
 }
-.titleDesc {
-	font-family: LigthItalicGoogle;
+.titleDesc{
+	font-family:LigthItalicGoogle ;
 }
 /*
  * Footer
  */
-footer {
+footer{
 	background-color: #03A9F4;
 	height: 100px;
 	padding-left: 37%;
 }
-footer ul li {
-
-	padding-top: 10px;
+footer ul li{
+	
+	padding-top:10px;
 	display: inline-block;
 	margin-left: 5px;
 }
-footer ul li img {
+footer ul li img{
 	width: 50px;
 }
-footer ul {
-	list-style: none;
+footer ul{
+    list-style: none;	
 }
-footer h4 {
+footer h4{
 	color: white;
 	padding-left: 45px;
-	padding-top: 0px;
+	padding-top: 0px; 
 	margin-top: 0px;
 }
 
@@ -894,18 +526,18 @@ footer h4 {
  * Fonts
  */
 @font-face {
-	font-family: 'RegularGoogle';
-	src: url('fonts/Roboto-Regular.ttf');
+    font-family: 'RegularGoogle';
+    src: url('fonts/Roboto-Regular.ttf');
 }
 @font-face {
-	font-family: 'ThinGoogle';
-	src: url('fonts/Roboto-Thin.ttf');
+    font-family: 'ThinGoogle';
+    src: url('fonts/Roboto-Thin.ttf');
 }
 @font-face {
-	font-family: 'CondensedGoogle';
-	src: url('fonts/RobotoCondensed-Light.ttf');
+    font-family: 'CondensedGoogle';
+    src: url('fonts/RobotoCondensed-Light.ttf');
 }
 @font-face {
-	font-family: 'LigthItalicGoogle';
-	src: url('fonts/Roboto-LightItalic.ttf');
+    font-family: 'LigthItalicGoogle';
+    src: url('fonts/Roboto-LightItalic.ttf');
 }

@@ -42,6 +42,7 @@ nav ul li {
 	display: inline-block;
 	padding-bottom: 7px;
 }
+
 .navCel {
 	color: white;
 	font-family: RegularGoogle;
@@ -189,16 +190,20 @@ form {
 
 #choixCours {
 	height: 35px;
+	width: 104.8%;
 }
 
 #typeCours {
-	height: 35px;typepaiement
+	height: 35px;
+	width: 104.8%;
 }
 #typepaiement {
 	height: 35px;
+	width: 104.8%;
 }
 
 #situation_familiale {
+	width: 104.8%;
 	height: 35px;
 }
 .form-control {
@@ -208,7 +213,9 @@ form {
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.428571429;
-	color: #555;
+	background: rgba(20,20,20,0.6);
+	color: #FFFFFF;
+		font-family: "CondensedGoogle";
 	vertical-align: middle;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -226,6 +233,7 @@ body {
 }
 .form-group {
 	margin-bottom: 15px;
+
 }
 
 div {
@@ -236,6 +244,8 @@ label {
 	margin-bottom: 5px;
 	font-weight: bold;
 	float: left;
+	font-family: "CondensedGoogle";
+	
 }
 
 textarea {
@@ -289,3 +299,8 @@ option[value=1]:active
 {
 color: #0288D1;
 } 
+
+select {
+	width:80px;
+	
+}
