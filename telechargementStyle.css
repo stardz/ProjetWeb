@@ -50,9 +50,18 @@ nav ul li{
 nav ul li:hover{
 	border-bottom: 3px #FFFFFF solid;
 }
+#container{
+	vertical-align: top;
+}
 .typeDiv{
 	display:inline-block;
-	width: 50%;
+	width: 48%;
+	margin-left: 15px;
+	height: 400px;
+	overflow: hidden;
+}
+.typeDiv:hover{
+	box-shadow: 10px 10px 5px #888888;
 }
 #enteteCours{
 	height: 100px;
@@ -70,7 +79,98 @@ nav ul li:hover{
 	padding-top: 20px;
 	font-family: RegularGoogle;
 }
-#arbreCours{
+#arbreTP{
+	padding-left: 100px;
+}
+#enteteTP{
+	height: 100px;
+	color:white;
+	background-color:#3F51B5;
+	style:none;
+	vertical-align: center;
+}
+#enteteTP h1{
+	height: 100px;
+	color:white;
+	style:none;
+	vertical-align: center;
+	text-align: center;
+	padding-top: 20px;
+	font-family: RegularGoogle;
+}
+#arbreprjt{
+	padding-left: 100px;
+}
+#arbreprjt{
+	padding-left: 100px;
+}
+#enteteprjt{
+	height: 100px;
+	color:white;
+	background-color:#3F51B5;
+	style:none;
+	vertical-align: center;
+}
+#enteteprjt h1{
+	height: 100px;
+	color:white;
+	style:none;
+	vertical-align: center;
+	text-align: center;
+	padding-top: 20px;
+	font-family: RegularGoogle;
+}
+#arbreOtils{
+	padding-left: 100px;
+}
+#arbreOtils{
+	padding-left: 100px;
+}
+#arbreOtils{
+	padding-left: 100px;
+}
+#enteteOutils{
+	height: 100px;
+	color:white;
+	background-color:#3F51B5;
+	style:none;
+	vertical-align: center;
+}
+#enteteOutils h1{
+	height: 100px;
+	color:white;
+	style:none;
+	vertical-align: center;
+	text-align: center;
+	padding-top: 20px;
+	font-family: RegularGoogle;
+}
+#arbreDoc{
+	padding-left: 100px;
+}
+#arbreDoc{
+	padding-left: 100px;
+}
+#arbreDoc{
+	padding-left: 100px;
+}
+#enteteDoc{
+	height: 100px;
+	color:white;
+	background-color:#3F51B5;
+	style:none;
+	vertical-align: center;
+}
+#enteteDoc h1{
+	height: 100px;
+	color:white;
+	style:none;
+	vertical-align: center;
+	text-align: center;
+	padding-top: 20px;
+	font-family: RegularGoogle;
+}
+#arbreDoc{
 	padding-left: 100px;
 }
 /* CSS Tree menu styles */
