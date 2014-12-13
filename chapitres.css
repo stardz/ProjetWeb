@@ -65,24 +65,14 @@ section li {
 	background: rgba(255, 255, 255, 0.6);
 	font-family: CondensedGoogle;
 	line-height: 1.7;
-	/*visibility: hidden;*/
 }
 
-#chap #main {
-	background: none;
-}
-/*
- #chap>div:target{
- visibility: visible;
- }
- */
 #navigation {
 	display: inline-block;
 	width: 30%;
 	margin-left: -150px;
 	box-shadow: 1px 1px 1px 1px rgba(50,140,50,0.9);
 	display: inline-block;
-	text-align: center;
 	width: 25%;
 	font-weight: normal;
 	color: #FFF;
@@ -93,26 +83,19 @@ section li {
 #navigation > div {
 	display: block;
 	padding: 10px;
+	text-align: center;
 }
 
 #navigation > div > h3 {
 	border-radius: 6px;
 	background: rgba(55, 55, 120, 0.6);
 	padding: 15px;
-	
 }
-#navigation > div > h4{
 
-
-
-	
-}
 #navigation > div > a {
 	color: rgba(12,125,100,1);
 	font-weight: bold;
 	font-size: 120%;
-	
-	
 }
 #navigation nav li {
 	text-align: left;
@@ -151,4 +134,24 @@ a {
 }
 a:visited {
 	color: rgba(20,20,20,0.8);
+}
+
+#liensExosDiv > h4 {
+	display: block;
+	text-align: center;
+}
+
+#liensExosDiv > ul > a {
+
+	font-weight: bold;
+	font-size: 100%;
+}
+#liensExosDiv  li {
+	text-align: left;
+	border-radius: 6px;
+	background: #FFD54F;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: -30px;
+	font-weight: bold;
 }

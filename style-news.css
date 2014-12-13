@@ -118,6 +118,9 @@ footer h4 {
 	background-size: contain;
 	padding: 100px;
 }
+#imagTICO img{
+	width: 100%;
+}
 .enseignements {
 
 	background: rgba(255,255,255,0.7);
