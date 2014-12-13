@@ -30,6 +30,7 @@ header{
 	width: 100%;
 	z-index: 10;
 }
+
 nav{
 	position: fixed;
 	top:1%;
@@ -37,6 +38,7 @@ nav{
 	height:10% ;
 	z-index: 10;
 }
+
 nav ul li{
 	    margin-right:40px;
 		display: inline-block;

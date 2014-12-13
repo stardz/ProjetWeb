@@ -38,7 +38,7 @@ nav{
 	z-index: 10;
 }
 nav ul li{
-	    margin-right:10px;
+	    margin-right:40px;
 		display: inline-block;
 	    padding-bottom: 7px;
 }
@@ -132,17 +132,17 @@ footer h4{
  */
 @font-face {
     font-family: 'RegularGoogle';
-    src: url('../../fonts/Roboto-Regular.ttf');
+    src: url('fonts/Roboto-Regular.ttf');
 }
 @font-face {
     font-family: 'ThinGoogle';
-    src: url('../../fonts/Roboto-Thin.ttf');
+    src: url('fonts/Roboto-Thin.ttf');
 }
 @font-face {
     font-family: 'CondensedGoogle';
-    src: url('../../fonts/RobotoCondensed-Light.ttf');
+    src: url('fonts/RobotoCondensed-Light.ttf');
 }
 @font-face {
     font-family: 'LigthItalicGoogle';
-    src: url('../../fonts/Roboto-LightItalic.ttf');
+    src: url('fonts/Roboto-LightItalic.ttf');
 }
