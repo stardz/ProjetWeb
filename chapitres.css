@@ -1,0 +1,154 @@
+body {
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #E1F5FE;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: block;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+/*
+ * Fonts
+ */
+@font-face {
+	font-family: 'RegularGoogle';
+	src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'ThinGoogle';
+	src: url('fonts/Roboto-Thin.ttf');
+}
+@font-face {
+	font-family: 'CondensedGoogle';
+	src: url('fonts/RobotoCondensed-Light.ttf');
+}
+@font-face {
+	font-family: 'LigthItalicGoogle';
+	src: url('fonts/Roboto-LightItalic.ttf');
+}
+section {
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 7px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+
+section li {
+	display: block;
+	padding: 06px;
+}
+
+#chap {
+	vertical-align: top;
+	display: inline-block;
+	width: 60%;
+	height: 580px;
+	margin-right: 10px;
+	margin-left: 120px;
+	background: none;
+}
+#chap div {
+	position: absolute;
+	display: block;
+	scroll: none;
+	width: 55%;
+	height: 770px;
+	margin-right: 10px;
+	margin-left: -50px;
+	margin-top: -80px;
+	margin-bottom: 80px;
+	padding: 15px;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.6);
+	font-family: CondensedGoogle;
+	line-height: 1.7;
+	/*visibility: hidden;*/
+}
+
+#chap #main {
+	background: none;
+}
+/*
+ #chap>div:target{
+ visibility: visible;
+ }
+ */
+#navigation {
+	display: inline-block;
+	width: 30%;
+	margin-left: -150px;
+	box-shadow: 1px 1px 1px 1px rgba(50,140,50,0.9);
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: none;
+	background: rgba(30,180,30,0.6);
+	font-family: CondensedGoogle;
+}
+#navigation > div {
+	display: block;
+	padding: 10px;
+}
+
+#navigation > div > h3 {
+	border-radius: 6px;
+	background: rgba(55, 55, 120, 0.6);
+	padding: 15px;
+	
+}
+#navigation > div > h4{
+
+
+
+	
+}
+#navigation > div > a {
+	color: rgba(12,125,100,1);
+	font-weight: bold;
+	font-size: 120%;
+	
+	
+}
+#navigation nav li {
+	text-align: left;
+	border-radius: 6px;
+	background: rgba(255, 255, 255, 0.5);
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: -30px;
+	font-weight: bold;
+}
+/*********************************************/
+#chap > div:not(:last-child),
+#chap > div:target~
+#main {
+	position: absolute;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	margin-top: -150%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 5;
+}
+
+#chap > div:target {
+	display: block;
+	margin-top: 0%;
+	z-index: 4;
+}
+
+/*****************************************************************/
+
+a {
+	text-decoration: none;
+	color: rgba(20,20,20,0.8);
+}
+a:visited {
+	color: rgba(20,20,20,0.8);
+}
