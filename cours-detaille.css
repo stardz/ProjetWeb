@@ -192,9 +192,9 @@ section > ul > li {
 	width: 25%;
 	font-size: 20px;
 	font-weight: bold;
-	color: #FFF;
+	
 	text-decoration: none;
-	background: rgba(30,180,30,0.6);
+	background: rgba(30,180,30,0.55);
 	font-family: ;
 }
 
