@@ -1,8 +1,8 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	padding-top: 100px;
 	width: 100%;
+	padding-top:100px;
 	background-color: #E1F5FE;
 }
 #logoSpace {
@@ -57,10 +57,15 @@ nav ul li:hover {
 /*
  * Modules div
  */
+.divBig{
+	width: 1200px;
+	box-shadow: 0px 0px 5px #888888;
+}
 /*
  * Tico div
  */
 #globalDiv {
+	padding-left: 100px;
 }
 .divsMod {
 	width: 40%;
@@ -77,7 +82,6 @@ nav ul li:hover {
 #divMpsi {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 100px;
 }
 .moduleDivS {
 	width: 290px;
@@ -121,7 +125,6 @@ nav ul li:hover {
 	cursor: pointer;
 	background: #4DB6AC;
 	margin: 3px;
-	padding-left: 7px;
 }
 .accordion section:hover {
 	background: #444;
@@ -154,14 +157,13 @@ nav ul li:hover {
 .accordion1 {
 	padding-top: 5px;
 	padding-right: 15px;
-	width: 870px;
+	width: 860px;
 	height: 343px;
 	display: inline-block;
-}
+	}
 #divTico {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 100px;
 	margin-top: 100px;
 }
 .moduleDivS #imagTICO {
@@ -257,7 +259,6 @@ nav ul li:hover {
 #divWeb {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 100px;
 	margin-top: 100px;
 }
 /*
@@ -338,7 +339,6 @@ nav ul li:hover {
 #divSiad {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 100px;
 	margin-top: 100px;
 }
 
@@ -426,7 +426,6 @@ a:visited{
 #divAnad {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 100px;
 	margin-top: 100px;
 }
 
@@ -506,7 +505,6 @@ a:visited{
 #divBdd {
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 100px;
 	margin-top: 100px;
 }
 
@@ -614,4 +612,45 @@ footer h4 {
 @font-face {
 	font-family: 'LigthItalicGoogle';
 	src: url('fonts/Roboto-LightItalic.ttf');
+}
+/*
+ * Separators
+ */
+.separator{
+	height: 100px;
+}
+/*
+ * Liens exos
+ */
+#liensExosDiv{
+	float: left;
+	overflow: hidden;
+	margin: 3px;
+}
+#liensExosDiv ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 80px;
+}
+#liensExosDiv ul li{
+  display:inline-block;
+  font-family: RegularGoogle, sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  width:120px;
+  border: 1px solid #888;
+}
+#liensExosDiv ul li a{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition: .3s background-color;
+}
+.lienExos:hover{
+	background-color: #005f5f;
+	color: white;
 }

@@ -196,7 +196,7 @@ ol	li
 		li.file a
 		{
 			background: url(images/document.png) 0 0 no-repeat;
-			color: #fff;
+			color: #000;
 			padding-left: 21px;
 			text-decoration: none;
 			display: block;
