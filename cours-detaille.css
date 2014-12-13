@@ -117,9 +117,7 @@ footer h4 {
 	list-style-type: none;
 	padding-left: 20px;
 }
-.imagBack {
 
-}
 .textDesc {
 	font-family: "CondensedGoogle";
 	padding-left: 20px;
@@ -154,12 +152,10 @@ footer h4 {
 	height: 60px;
 }
 
-body, p, h1, h2, h3, h4, h5, ul li {
+p, h1, h2, h3, h4, h5, ul li {
 	font-family: 'Lato', sans-serif;
 }
-body {
 
-}
 .form-group {
 	margin-bottom: 15px;
 }
@@ -196,6 +192,7 @@ section > ul > li {
 	text-decoration: none;
 	background: rgba(30,180,30,0.55);
 	font-family: ;
+	
 }
 
 section > ul > li > ul {
