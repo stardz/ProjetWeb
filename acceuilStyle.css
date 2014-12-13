@@ -76,8 +76,8 @@ nav ul li:hover{
     -moz-transition: 0.5s ease-in-out;
 }
 .moduleDivS:hover{
-	-webkit-transform: scale(1.2,1.2);
-	-moz-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.05,1.05);
+	-moz-transform: scale(1.05,1.05);
 }
 .moduleDivS #imagMpsi{
 	display: block;
@@ -173,7 +173,8 @@ nav ul li:hover{
     -webkit-transition: 0.5s ease-in-out;
 }
 .moduleDivL:hover{
-	-webkit-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.05,1.05);
+	-moz-transform: scale(1.05,1.05);
 }
 .moduleDivL #imagTICO{
 	display: block;
