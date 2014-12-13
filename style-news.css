@@ -123,8 +123,8 @@ footer h4 {
 	background: rgba(255,255,255,0.7);
 	border-top: 3px solid rgba(200,20,0,0.8);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	padding: 15px;
-	margin-top: 16px;
+		padding-bottom: 15px;
+	margin-top: 30px;
 }
 
 /*******************************************************/
@@ -144,14 +144,14 @@ footer h4 {
 	background: rgba(255,255,255,0.7);
 	border-top: 3px solid rgba(200,20,0,0.8);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	padding: 10px;
+	padding: 0px;
 	padding-bottom:90px;
 }
 
 .enRelation {
 	background: rgba(255,255,255,0.7);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	margin-top: 16px;
+	margin-top: 30px;
 }
 
 .divSecondaire > :nth-child(2) {
@@ -171,6 +171,11 @@ footer h4 {
 .titleDesc {
 	font-family: LigthItalicGoogle;
 	padding-left: 20px;
+	background: #2196F3;
+	color:#FFFFFF;
+	padding-top:10px;
+	padding-bottom:10px;
+	
 }
 
 

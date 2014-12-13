@@ -617,7 +617,7 @@ footer h4 {
  * Separators
  */
 .separator{
-	height: 100px;
+	height: 70px;
 }
 /*
  * Liens exos
@@ -633,7 +633,7 @@ footer h4 {
   padding: 0;
   margin: 0;
   margin-top: 10px;
-  padding-left: 80px;
+  padding-left: 100px;
 }
 #liensExosDiv ul li{
   display:inline-block;
@@ -643,6 +643,7 @@ footer h4 {
   height: 40px;
   width:120px;
   border: 1px solid #888;
+  margin-right: 10px;
 }
 #liensExosDiv ul li a{
   text-decoration: none;
@@ -650,7 +651,7 @@ footer h4 {
   display: block;
   transition: .3s background-color;
 }
-.lienExos:hover{
+#liensExosDiv ul li a:hover{
 	background-color: #005f5f;
-	color: white;
+	color: #FFFFFF;
 }
