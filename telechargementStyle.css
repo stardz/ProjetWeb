@@ -1,57 +1,60 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	padding-top: 100px;
-	width: 100%;
+	width:100%;
 	background-color: #E1F5FE;
 }
-#logoSpace {
-	position: fixed;
-	top: 0px;
+.refsCours{
+	color:white;
+  text-decoration: none;
+}
+#logoSpace{
+	position:absolute;
+	top:0px;
 	padding-left: 20px;
 	height: 10%;
 }
-#logoSpace h1 {
+#logoSpace h1{
 	font-family: ThinGoogle;
 	color: white;
 	height: 100%;
 	margin: 0px;
 	margin-top: 10px;
 }
-header {
-	position: fixed;
-	top: 0px;
-	left: 0px;
+header{
+	position:absolute;
+	top:0px;
+	left:0px;
 	background-color: #0288D1;
 	height: 10%;
 	width: 100%;
 	z-index: 10;
 }
 
-nav {
-	position: fixed;
-	top: 1%;
+nav{
+	position: absolute;
+	top:1%;
 	right: 10px;
-	height: 10%;
+	height:10% ;
 	z-index: 10;
 }
-nav ul li {
-	margin-right: 40px;
-	display: inline-block;
-	padding-bottom: 7px;
+
+nav ul li{
+	    margin-right:40px;
+		display: inline-block;
+	    padding-bottom: 7px;
 }
-.navCel {
-	color: white;
+.navCel{
+	color:white;
 	font-family: RegularGoogle;
-	font-size: large;
-	font-size: 20px;
-	text-decoration: none;
+	font-size:large;
+	font-size:20px;
+	text-decoration:none;
 	list-style: none;
 }
-nav ul li:hover {
+nav ul li:hover{
 	border-bottom: 3px #FFFFFF solid;
 }
-
 #container {
 	vertical-align: top;
 	margin: 20px;
@@ -65,9 +68,9 @@ nav ul li:hover {
 .typeDiv {
 	overflow: hidden;
 	display: inline-block;
-	width: 48%;
+	width: 90%;
 	margin-left: 15px;
-	height: 400px;
+	height: 96%;
 	box-shadow: 0px 0px 5px #888888;
 	margin-bottom: 20px;
 }
@@ -284,27 +287,27 @@ li input:checked + ol > li:last-child {
 /*
  * Footer
  */
-footer {
+footer{
 	background-color: #03A9F4;
 	height: 100px;
 	padding-left: 37%;
 }
-footer ul li {
-
-	padding-top: 10px;
+footer ul li{
+	
+	padding-top:10px;
 	display: inline-block;
 	margin-left: 5px;
 }
-footer ul li img {
+footer ul li img{
 	width: 50px;
 }
-footer ul {
-	list-style: none;
+footer ul{
+    list-style: none;	
 }
-footer h4 {
+footer h4{
 	color: white;
 	padding-left: 45px;
-	padding-top: 0px;
+	padding-top: 0px; 
 	margin-top: 0px;
 }
 /*
