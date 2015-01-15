@@ -3,84 +3,84 @@ body {
 	padding: 0px;
 	width: 100%;
 	background-color: #E1F5FE;
+	overflow: scroll;
 }
-#logoSpace {
-	position: fixed;
-	top: 0px;
+#logoSpace{
+	position:absolute;
+	top:0px;
 	padding-left: 20px;
 	height: 10%;
 }
-#logoSpace h1 {
+#logoSpace h1{
 	font-family: ThinGoogle;
 	color: white;
 	height: 100%;
 	margin: 0px;
 	margin-top: 10px;
 }
-header {
-	position: fixed;
-	top: 0px;
-	left: 0px;
+header{
+	position:absolute;
+	top:0px;
+	left:0px;
 	background-color: #0288D1;
 	height: 10%;
 	width: 100%;
 	z-index: 10;
 }
-nav {
-	position: fixed;
-	top: 1%;
+
+nav{
+	position: absolute;
+	top:1%;
 	right: 10px;
-	height: 5%;
+	height:10% ;
 	z-index: 10;
 }
-nav ul li {
-	margin-right: 40px;
-	display: inline-block;
-	padding-bottom: 7px;
-}
 
-
-nav ul li:hover {
-	border-bottom: 3px #FFFFFF solid;
+nav ul li{
+	    margin-right:40px;
+		display: inline-block;
+	    padding-bottom: 7px;
 }
-.navCel {
-	color: white;
+.navCel{
+	color:white;
 	font-family: RegularGoogle;
-	font-size: large;
-	font-size: 20px;
-	text-decoration: none;
+	font-size:large;
+	font-size:20px;
+	text-decoration:none;
 	list-style: none;
+}
+nav ul li:hover{
+	border-bottom: 3px #FFFFFF solid;
 }
 /*
  * Footer
  */
-footer {
+footer{
 	background-color: #03A9F4;
 	height: 100px;
-	padding-left: 37%
+	padding-left: 37%;
 }
-footer ul li {
-
-	padding-top: 10px;
+footer ul li{
+	
+	padding-top:10px;
 	display: inline-block;
 	margin-left: 5px;
 }
-footer ul li img {
+footer ul li img{
 	width: 50px;
 }
-footer ul {
-	list-style: none;
+footer ul{
+    list-style: none;	
 }
-footer h4 {
+footer h4{
 	color: white;
 	padding-left: 45px;
-	padding-top: 0px;
+	padding-top: 0px; 
 	margin-top: 0px;
 }
 
-.slide{
-	height:60%;
-
+.slide {
+	height: 60%;
 }
 
 /*
@@ -106,19 +106,24 @@ footer h4 {
 	border-radius: 2px;
 }
 
+
 .infosEtNouveaute {
 
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
 	border-top: 3px solid rgba(20,20,200,0.8);
 	background: rgba(255,255,255,0.7);
-	padding-bottom: 10px;
+	width:88%;
+	height: 90%;
+	margin: 4%;
 }
+
 .infosEtNouveaute .imagBack {
 	background-image: url("images/slide2.jpg");
-	background-size: contain;
-	padding: 100px;
+	background-size: cover;
+	padding: 60px;
+	
 }
-#imagTICO img{
+#imagTICO img {
 	width: 100%;
 }
 .enseignements {
@@ -126,8 +131,9 @@ footer h4 {
 	background: rgba(255,255,255,0.7);
 	border-top: 3px solid rgba(200,20,0,0.8);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-		padding-bottom: 15px;
-	margin-top: 30px;
+	width:88%;
+	height: 90%;
+	margin: 4%;
 }
 
 /*******************************************************/
@@ -148,7 +154,7 @@ footer h4 {
 	border-top: 3px solid rgba(200,20,0,0.8);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
 	padding: 0px;
-	padding-bottom:90px;
+	padding-bottom: 90px;
 }
 
 .enRelation {
@@ -164,29 +170,27 @@ footer h4 {
 #descOffres ul {
 	font-family: LigthItalicGoogle;
 	list-style-type: none;
-	
 }
 
 .textDesc {
 	font-family: CondensedGoogle;
-	padding-left: 20px;
+	padding-left: 5%;
+	width: inherit;
 }
 .titleDesc {
 	font-family: LigthItalicGoogle;
-	padding-left: 20px;
+	padding-left: 5%;
 	background: #2196F3;
-	color:#FFFFFF;
-	padding-top:10px;
-	padding-bottom:10px;
-	
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 95%;
 }
 
-
-
-	/*
-	* Fonts
-	*/
-	@font-face {
+/*
+ * Fonts
+ */
+@font-face {
 	font-family: 'RegularGoogle';
 	src: url('fonts/Roboto-Regular.ttf');
 }
