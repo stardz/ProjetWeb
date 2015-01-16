@@ -6,6 +6,7 @@ body {
 	font-size: 14px;
 	line-height: 1.428571429;
 	color: #333;
+	overflow: scroll;
 }
 #logoSpace {
 	position: fixed;
@@ -82,85 +83,55 @@ footer h4 {
 	margin-top: 0px;
 }
 form {
-	padding-top: 20px;
+	padding-top: 0px;
 	display: block;
-	margin-top: 0em;
-	padding-left: 50px;
+	padding-left: 5%;
 }
 
 /*
  * Divs modules
  */
-/*Contenaire Principal*/
-#contactContainer {
-	width: 100%;
-	height: 100%;
-	padding-top: 100px;
-}
 
-/* Div Principal*/
-.divPrincipal {
 
-	float: left;
-	margin-right: 20px;
-	width: 55%;
-	margin-left: 8%;
-	background: rgba(255,255,255,0.7);
-	list-style-type: none;
-	background: #E1F5FE;
-	border-radius: 2px;
-}
 
 .inscrInfos {
-
+/*
 	background: rgba(255,255,255,0.7);
 	border-top: 3px solid rgba(20,20,200,0.8);
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	padding-top: 15px;
-	padding-bottom: 15px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);*/
+	width: 80%;
+	height: 10%;
+
+	float:left;
 }
 
 /*******************************************************/
 /*****************************************************************/
-/*Div Secondaire*/
-.divSecondaire {
-	float: right;
-	list-style-type: none;
-	background: #E1F5FE;
-	border-radius: 2px;
-	width: 25%;
-	display: block;
-	margin-right: 8%;
-}
-
-.formulaire {
-	background: rgba(255,255,255,0.7);
-	border-top: 3px solid rgba(200,20,0,0.8);
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	padding: 10px;
-}
 
 #descFormulaire {
 	font-family: LigthItalicGoogle;
-	list-style-type: none;
-	width: 80%;
+	background: rgba(255,255,255,0.7);
+	border-top: 3px solid rgba(200,20,0,0.8);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
+	width: 88%;
+	height: 90%;
+	margin: 4%;
 }
 
-.container {
-	font-family: LigthItalicGoogle;
-	list-style-type: none;
-	padding-left: 20px;
-}
-.imagBack {
 
-}
+
 .textDesc {
 	font-family: CondensedGoogle;
 	padding-left: 20px;
 }
 .titleDesc {
 	font-family: LigthItalicGoogle;
-	padding-left: 20px;
+	padding-left: 8%;
+	background: #2196F3;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 100%;
 }
 
 /*
@@ -190,32 +161,32 @@ form {
 
 #choixCours {
 	height: 35px;
-	width: 104.8%;
+	width: 96.5%;
 }
 
 #typeCours {
 	height: 35px;
-	width: 104.8%;
+	width: 96.5%;
 }
 #typepaiement {
 	height: 35px;
-	width: 104.8%;
+	width: 96.5%;
 }
 
 #situation_familiale {
-	width: 104.8%;
+	width: 96.5%;
 	height: 35px;
 }
 .form-control {
 	display: block;
-	width: 100%;
+	width: 90%;
 	height: 20px;
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.428571429;
 	background: rgba(20,20,20,0.6);
 	color: #FFFFFF;
-		font-family: "CondensedGoogle";
+	font-family: "CondensedGoogle";
 	vertical-align: middle;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -233,7 +204,6 @@ body {
 }
 .form-group {
 	margin-bottom: 15px;
-
 }
 
 div {
@@ -245,7 +215,6 @@ label {
 	font-weight: bold;
 	float: left;
 	font-family: "CondensedGoogle";
-	
 }
 
 textarea {
@@ -270,7 +239,7 @@ textarea {
 
 	display: inline-block;
 	padding: 6px 12px;
-	margin-left: 90%;
+	margin-left: 1%;
 	margin-bottom: 10px;
 	font-size: 14px;
 	font-weight: normal;
@@ -291,16 +260,21 @@ textarea.form-control {
 	height: auto;
 }
 
-.container h4, .container h3, .container h2 {
+option[value=1]
+:active {
 	color: #0288D1;
 }
 
-option[value=1]:active
-{
-color: #0288D1;
-} 
-
 select {
-	width:80px;
-	
+	width: 80px;
+}
+.container2 h3, p, h4 {
+	margin-left: 1%;
+}
+.container2 h4, .container2 h3, .container2 h2 {
+	color: #0288D1;
+}
+
+#btn1{
+	display: none;
 }

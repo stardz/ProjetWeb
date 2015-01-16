@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 		<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 
-			<script>
+		<script>
 			function showFileChooser() {
 				var user = document.getElementById('user').value;
 				var pass = document.getElementById('pass').value;
@@ -20,24 +20,24 @@
 			}
 
 			function valider() {
-				var selectRub=document.getElementById('rubriqueSelec');
-				var selectMod=document.getElementById('moduleSelec');
-				var selectCours=document.getElementById('coursSelect');
-				var listeOL=document.getElementsByClassName('addClass');
-			 	var indice=0;
-			    indice =(selectRub.selectedIndex*30)+selectMod.selectedIndex*5+selectCours.selectedIndex;
-			   // alert(document.getElementById('fileInput').value.split('\\').pop());
-			    var textNode=document.createTextNode(document.getElementById('fileInput').value.split('\\').pop());  
-                var node=document.createElement("LI");
-                var unode=document.createElement("A");
-                node.className="file";
-                unode.appendChild(textNode);
-                unode.href=""+document.getElementById('fileInput').value;
-                node.appendChild(unode);
-                listeOL[indice].appendChild(node);
+				var selectRub = document.getElementById('rubriqueSelec');
+				var selectMod = document.getElementById('moduleSelec');
+				var selectCours = document.getElementById('coursSelect');
+				var listeOL = document.getElementsByClassName('addClass');
+				var indice = 0;
+				indice = (selectRub.selectedIndex * 30) + selectMod.selectedIndex * 5 + selectCours.selectedIndex;
+				// alert(document.getElementById('fileInput').value.split('\\').pop());
+				var textNode = document.createTextNode(document.getElementById('fileInput').value.split('\\').pop());
+				var node = document.createElement("LI");
+				var unode = document.createElement("A");
+				node.className = "file";
+				unode.appendChild(textNode);
+				unode.href = "" + document.getElementById('fileInput').value;
+				node.appendChild(unode);
+				listeOL[indice].appendChild(node);
 			}
 		</script>
-	
+
 	</head>
 
 	<body>
@@ -55,22 +55,22 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="acceuil.html" class="navCel">Acceuil</a>
+						<a id="accueil" nohref onclick="" class="navCel">Acceuil</a>
 					</li>
 					<li>
-						<a href="news.html" class="navCel">News</a>
+						<a id="news" nohref onclick="" class="navCel">News</a>
 					</li>
 					<li>
-						<a href="cours.html" class="navCel">Cours</a>
+						<a id="cours" nohref onclick="" class="navCel">Cours</a>
 					</li>
 					<li>
-						<a href="telechargement.html" class="navCel">Telechargement</a>
+						<a id="telec" nohref onclick="" class="navCel">Telechargement</a>
 					</li>
 					<li>
-						<a href="inscription.html" class="navCel">Inscriptions</a>
+						<a id="inscr" nohref onclick="" class="navCel">Inscriptions</a>
 					</li>
 					<li>
-						<a href="contact.html" class="navCel">Contacts</a>
+						<a id="contact" nohref onclick="" class="navCel">Contacts</a>
 					</li>
 				</ul>
 			</nav>
@@ -3152,7 +3152,7 @@
 												</li>
 											</ol>
 
-					                    </li>
+										</li>
 										<li>
 											<label for="folder4">SIAD</label>
 											<input type="checkbox"  />
@@ -4242,6 +4242,42 @@
 		</div>
 
 		<script type="text/javascript">
+			$('a#accueil').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'acceuil.html';
+				}, 1000);
+			});
+			$('a#news').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'news.html';
+				}, 1000);
+			});
+			$('a#cours').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'cours.html';
+				}, 1000);
+			});
+		
+			$('a#inscr').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'inscription.html';
+				}, 1000);
+			});
+			$('a#contact').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'contact.html';
+				}, 1000);
+			});
 			function loadApp() {
 
 				// Create the flipbook
@@ -4254,6 +4290,8 @@
 					// Height
 
 					height : 600,
+
+					duration : 1500,
 
 					// Elevation
 
@@ -4268,6 +4306,13 @@
 					autoCenter : true
 
 				});
+
+				setTimeout(function() {
+
+					$('.flipbook').turn("next");
+
+				}, 1000);
+
 			}
 
 			// Load the HTML4 version if there's not CSS transform

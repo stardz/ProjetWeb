@@ -21,25 +21,24 @@
 				</div>
 			</header>
 			<nav>
-				<ul>
+			<ul>
 					<li>
-						<a href="acceuil.html" class="navCel">Acceuil</a>
+						<a id="accueil" nohref onclick="" class="navCel">Acceuil</a>
 					</li>
 					<li>
-						<a href="news.html" class="navCel">News</a>
+						<a id="news" nohref onclick="" class="navCel">News</a>
 					</li>
 					<li>
-						<a href="cours.html" class="navCel">Cours</a>
-					</li>
-
-					<li>
-						<a href="telechargement.html" class="navCel">Telechargement</a>
+						<a id="cours" nohref onclick="" class="navCel">Cours</a>
 					</li>
 					<li>
-						<a href="inscription.html" class="navCel">Inscriptions</a>
+						<a id="telec" nohref onclick="" class="navCel">Telechargement</a>
 					</li>
 					<li>
-						<a href="contact.html" class="navCel">Contacts</a>
+						<a id="inscr" nohref onclick="" class="navCel">Inscriptions</a>
+					</li>
+					<li>
+						<a id="contact" nohref onclick="" class="navCel">Contacts</a>
 					</li>
 				</ul>
 			</nav>
@@ -423,6 +422,43 @@
 		</footer>
 		</div>
 		<script type="text/javascript">
+		$('a#accueil').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'acceuil.html';
+				}, 1000);
+			});
+			$('a#news').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'news.html';
+				}, 1000);
+			});
+
+			$('a#telec').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'telechargement.html';
+				}, 1000);
+			});
+			$('a#inscr').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					
+					document.location.href = 'inscription.html';
+				}, 1000);
+			});
+			$('a#contact').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'contact.html';
+				}, 1000);
+			});
 			function loadApp() {
 
 				// Create the flipbook
@@ -435,6 +471,8 @@
 					// Height
 
 					height : 600,
+
+					duration : 1500,
 
 					// Elevation
 
@@ -449,6 +487,13 @@
 					autoCenter : true
 
 				});
+
+				setTimeout(function() {
+
+					$('.flipbook').turn("next");
+
+				}, 1000);
+
 			}
 
 			// Load the HTML4 version if there's not CSS transform

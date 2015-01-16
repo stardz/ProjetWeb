@@ -151,6 +151,9 @@ form {
 	font-size: 100%;
 }
 
+#sub1{
+	display: none;
+}
 /*
  * Fonts
  */

@@ -21,24 +21,24 @@
 				</div>
 			</header>
 			<nav>
-				<ul>
+					<ul>
 					<li>
-						<a href="acceuil.html" class="navCel">Acceuil</a>
+						<a id="accueil" nohref onclick="" class="navCel">Acceuil</a>
 					</li>
 					<li>
-						<a href="news.html" class="navCel">News</a>
+						<a id="news" nohref onclick="" class="navCel">News</a>
 					</li>
 					<li>
-						<a href="cours.html" class="navCel">Cours</a>
+						<a id="cours" nohref onclick="" class="navCel">Cours</a>
 					</li>
 					<li>
-						<a href="telechargement.html" class="navCel">Telechargement</a>
+						<a id="telec" nohref onclick="" class="navCel">Telechargement</a>
 					</li>
 					<li>
-						<a href="inscription.html" class="navCel">Inscriptions</a>
+						<a id="inscr" nohref onclick="" class="navCel">Inscriptions</a>
 					</li>
 					<li>
-						<a href="contact.html" class="navCel">Contacts</a>
+						<a id="contact" nohref onclick="" class="navCel">Contacts</a>
 					</li>
 				</ul>
 			</nav>
@@ -128,63 +128,66 @@
 						</div>
 						<div style="padding: 10px;">
 							<div class="formulaire">
-									<h3 class="titleDesc">Contacter Nous</h3>
-									<form method="post" action="" role="form" style="padding: 10px;">
-										<input type="hidden" name="csrfmiddlewaretoken" value="AF7S7DimieUWZ1G486h7g4HFK8AXlSie">
+								<h3 class="titleDesc">Contacter Nous</h3>
+								<form method="post" action="" role="form" style="padding: 10px;" id="form1">
+									<input type="hidden" name="csrfmiddlewaretoken" value="AF7S7DimieUWZ1G486h7g4HFK8AXlSie">
 
-										<div class="form-group">
-											<label for="id_first_name">First name:</label>
-											<input class="form-control" id="id_first_name" maxlength="255" name="first_name" type="text">
+									<div class="form-group">
+										<label for="id_first_name">First name:</label>
+										<input class="form-control" id="id_first_name" maxlength="255" name="first_name" type="text" required="true">
 
-										</div>
+									</div>
 
-										<div class="form-group">
-											<label for="id_last_name">Last name:</label>
-											<input class="form-control" id="id_last_name" maxlength="255" name="last_name" type="text">
+									<div class="form-group">
+										<label for="id_last_name">Last name:</label>
+										<input class="form-control" id="id_last_name" maxlength="255" name="last_name" type="text" required="true">
 
-										</div>
+									</div>
 
-										<div class="form-group">
-											<label for="id_organization">Organization:</label>
-											<input class="form-control" id="id_organization" maxlength="255" name="organization" type="text">
+									<div class="form-group">
+										<label for="id_organization">Organization:</label>
+										<input class="form-control" id="id_organization" maxlength="255" name="organization" type="text" required="true">
 
-										</div>
+									</div>
 
-										<div class="form-group">
-											<label for="id_email">Email:</label>
-											<input class="form-control" id="id_email" maxlength="75" name="email" type="email">
+									<div class="form-group">
+										<label for="id_email">Email:</label>
+										<input class="form-control" id="id_email" maxlength="75" name="email" type="email" required="true">
 
-										</div>
+									</div>
 
-										<div class="form-group">
-											<label for="id_phone">Phone:</label>
-											<input class="form-control" id="id_phone" maxlength="255" name="phone" type="text">
+									<div class="form-group">
+										<label for="id_phone">Phone:</label>
+										<input class="form-control" id="id_phone" maxlength="255" name="phone" type="text" required="true">
 
-										</div>
+									</div>
 
-										<div class="form-group">
-											<label for="id_country">Country:</label>
-											<input class="form-control" id="id_country" maxlength="255" name="country" type="text">
+									<div class="form-group">
+										<label for="id_country">Country:</label>
+										<input class="form-control" id="id_country" maxlength="255" name="country" type="text" required="true">
 
-										</div>
-
-									</form>
-
+									</div>
+									<div class="pull-right">
+										<button type="submit" class="btn btn-success" id="sub1">
+											Send
+										</button>
+									</div>
+								</form>
 
 							</div>
 						</div>
 						<div style="padding: 10px;">
 							<div class="formulaire">
 								<h3 class="titleDesc">Contacter Nous</h3>
-								<form method="post" action="" role="form" style="padding: 10px;">
+								<form method="post" action="" role="form" style="padding: 10px;" id="form2">
 
 									<div class="form-group">
 										<label for="id_message">Message:</label>
-										<textarea class="form-control" cols="40" id="id_message" name="message" rows="10"></textarea>
+										<textarea class="form-control" cols="40" id="id_message" name="message" rows="10"  required="true"></textarea>
 									</div>
 
 									<div class="pull-right">
-										<button type="submit" class="btn btn-success">
+										<button  type="button"  class="btn btn-success" onclick="submitTwo()">
 											Send
 										</button>
 									</div>
@@ -220,7 +223,51 @@
 			</footer>
 		</div>
 		<script type="text/javascript">
-			function loadApp() {
+	$('a#accueil').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'acceuil.html';
+				}, 1000);
+			});
+			$('a#news').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'news.html';
+				}, 1000);
+			});
+			$('a#cours').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'cours.html';
+				}, 1000);
+			});
+			$('a#telec').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'telechargement.html';
+				}, 1000);
+			});
+			$('a#inscr').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					
+					document.location.href = 'inscription.html';
+				}, 1000);
+			});
+
+			function submitTwo() {
+				$("#sub1").trigger("click");
+//				document.getElementById("form1").submit();
+	//			document.getElementById("form2").submit();
+
+			}
+
+				function loadApp() {
 
 				// Create the flipbook
 
@@ -232,6 +279,8 @@
 					// Height
 
 					height : 600,
+					
+					duration: 1500,
 
 					// Elevation
 
@@ -246,6 +295,13 @@
 					autoCenter : true
 
 				});
+
+				setTimeout(function() {
+
+					$('.flipbook').turn("next");
+
+				}, 1000);
+
 			}
 
 			// Load the HTML4 version if there's not CSS transform
@@ -257,7 +313,6 @@
 				both : ['css/basic.css'],
 				complete : loadApp
 			});
-
 		</script>
 	</body>
 </html>

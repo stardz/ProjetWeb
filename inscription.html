@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-
 		<title>Inscription</title>
+
+		<meta charset="utf-8">
+		<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+		<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 		<link href="inscription.css" rel="stylesheet" type="text/css" />
 
 	</head>
@@ -22,160 +24,292 @@
 			</header>
 			<nav>
 				<ul>
-					<li><a href="acceuil.html" class="navCel">Acceuil</a></li>
-						<li><a href="news.html" class="navCel">News</a></li>
-						<li><a href="cours.html" class="navCel">Cours</a></li>
-						<li><a href="telechargement.html" class="navCel">Telechargement</a></li>
-						<li><a href="inscription.html" class="navCel">Inscriptions</a></li>
-						<li><a href="contact.html" class="navCel">Contacts</a></li>
+					<li>
+						<a id="accueil" nohref onclick="" class="navCel">Acceuil</a>
+					</li>
+					<li>
+						<a id="news" nohref onclick="" class="navCel">News</a>
+					</li>
+					<li>
+						<a id="cours" nohref onclick="" class="navCel">Cours</a>
+					</li>
+					<li>
+						<a id="telec" nohref onclick="" class="navCel">Telechargement</a>
+					</li>
+					<li>
+						<a id="inscr" nohref onclick="" class="navCel">Inscriptions</a>
+					</li>
+					<li>
+						<a id="contact" nohref onclick="" class="navCel">Contacts</a>
+					</li>
 				</ul>
 			</nav>
+			<div class="flipbook-viewport" style="position: absolute;top:70px;">
+				<div class="container">
+					<div class="flipbook">
 
-			<div id="contactContainer">
-				<div class="divPrincipal">
+						<div style="padding-top:5px; background:url(images/e-learning.jpg);"></div>
 
-					<div class="formulaire">
-						<div id="descFormulaire">
-							<h3 class="titleDesc">Inscription</h3>
-							<form method="post" action="" role="form">
-								<input type="hidden" name="csrfmiddlewaretoken" value="AF7S7DimieUWZ1G486h7g4HFK8AXlSie">
+						<div style="padding:10px;">
+							<div id="descFormulaire">
+								<h3 class="titleDesc">Inscription</h3>
+								<form method="post" action="" role="form" id="form1">
+									<input type="hidden" name="csrfmiddlewaretoken" value="AF7S7DimieUWZ1G486h7g4HFK8AXlSie">
 
-								<div class="form-group">
-									<label for="choix_cours">Choisir le cours</label>
-									<select class="form-control" id="choixCours" name="wilaya">
-										<option value="1">BDD avancées</option>
-										<option value="2">Analyse des données</option>
-										<option value="3">Systemes AD</option>
-										<option value="4">Management des changements</option>
-										<option value="5">TIC en Organisation</option>
-										<option value="6" selected="selected">Developpement WEB</option>
-									</select>
+									<div class="form-group">
+										<label for="choix_cours">Choisir le cours</label>
+										<select class="form-control" id="choixCours" name="wilaya" onchange="afficherPrix()">
+											<option value="1">BDD avancées</option>
+											<option value="2">Analyse des données</option>
+											<option value="3">Systemes AD</option>
+											<option value="4">Management des changements</option>
+											<option value="5">TIC en Organisation</option>
+											<option value="6" selected="selected">Developpement WEB</option>
+										</select>
 
-								</div>
+									</div>
 
-								<div class="form-group">
-									<label for="id_first_name">First name:</label>
-									<input class="form-control" id="id_first_name" required="required"  maxlength="255" name="first_name" type="text">
+									<div class="form-group">
+										<label for="id_first_name">First name:</label>
+										<input class="form-control" id="id_first_name" required="required"  maxlength="255" name="first_name" type="text">
 
-								</div>
+									</div>
 
-								<div class="form-group">
-									<label for="id_last_name">Last name:</label>
-									<input class="form-control" id="id_last_name" required="required" maxlength="255" name="last_name" type="text">
+									<div class="form-group">
+										<label for="id_last_name">Last name:</label>
+										<input class="form-control" id="id_last_name" required="required" maxlength="255" name="last_name" type="text">
 
-								</div>
+									</div>
 
-								<div class="form-group">
-									<label for="id_date_naissance">Date de naissance:</label>
-									<input class="form-control" type="date" name="dnaiss" required="true"  />
+									<div class="form-group">
+										<label for="id_date_naissance">Date de naissance:</label>
+										<input class="form-control" type="date" name="dnaiss" required="true"  />
 
-								</div>
+									</div>
 
-								<div class="form-group">
-									<label for="id_adresse_postale">Adresse postale:</label>
-									<input class="form-control" id="id__ad_postale" maxlength="255" required="required" name="adresse_postale" type="text">
+									<div class="form-group">
+										<label for="id_adresse_postale">Adresse postale:</label>
+										<input class="form-control" id="id__ad_postale" maxlength="255" required="required" name="adresse_postale" type="text">
 
-								</div>
+									</div>
 
-								<div class="form-group">
-									<label for="id_email">Email:</label>
-									<input class="form-control" id="id_email" maxlength="75" required="required" name="email" type="email">
+									<div class="form-group">
+										<label for="id_email">Email:</label>
+										<input class="form-control" id="id_email" maxlength="75" required="required" name="email" type="email">
 
-								</div>
+									</div>
 
-								<div class="form-group">
-									<label for="id_phone">N° Téléphone:</label>
-									<input class="form-control" pattern="[0-9]+" id="id_phone" maxlength="255" required="required" name="phone" type="tel">
+									<div class="pull-right">
+										<button type="submit" class="btn btn-success" id="btn1">
+											Send
+										</button>
+									</div>
 
-								</div>
+								</form>
 
-								<div class="form-group">
-									<label for="id_country">Situation familiale:</label>
-									<select class="form-control" id="situation_familiale" required="required" name="type cours">
-										<option value="1">Marrié</option>
-										<option value="2">Divorcé</option>
-										<option value="3">Célibataire</option>
-
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="type_cours">Type de cours</label>
-									<select class="form-control" id="typeCours" name="type cours">
-										<option value="1">Normal</option>
-										<option value="2">Accélérér</option>
-										<option value="3">Cours de soir</option>
-
-									</select>
-
-								</div>
-
-								<div class="form-group">
-									<label for="id_national">N° identification nationale:</label>
-									<input class="form-control"  id="id_national" maxlength="255" required="required" name="phone" type="number">
-
-								</div>
-								
-								<div class="form-group">
-									<label for="type_cours">Type de paiement</label>
-									<select class="form-control" id="typepaiement" name="type paiement">
-										<option value="1">VISA</option>
-										<option value="2">MasterCard</option>
-										<option value="3">PayPal</option>
-										<option value="4">CIB</option>
-									</select>
-
-								</div>
-								<div class="pull-right">
-									<button type="submit" class="btn btn-success">
-										Send
-									</button>
-								</div>
-							</form>
-
-						</div>
-
-					</div>
-
-				</div>
-				<div class="divSecondaire">
-					<div class="inscrInfos">
-
-						<div id="descInfo">
-							<h3 class="titleDesc">Informations sur l'inscription</h3>
-							<div class="container">
-								<h4>Prix de formation</h4>
-
-								<h4>Prix de l'inscription</h4>
 							</div>
+						</div>
+						<div style="padding: 10px;">
+							<div id="descFormulaire">
+								<h3 class="titleDesc">Inscription</h3>
+								<form method="post" action="" role="form" id="form2">
+
+									<div class="form-group">
+										<label for="id_phone">N° Téléphone:</label>
+										<input class="form-control" pattern="[0-9]+" id="id_phone" maxlength="255" required="required" name="phone" type="tel">
+
+									</div>
+
+									<div class="form-group">
+										<label for="id_country">Situation familiale:</label>
+										<select class="form-control" id="situation_familiale" required="required" name="type cours">
+											<option value="1">Marrié</option>
+											<option value="2">Divorcé</option>
+											<option value="3">Célibataire</option>
+
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label for="type_cours">Type de cours</label>
+										<select class="form-control" id="typeCours" name="type cours" onchange="afficherPrix()">
+											<option value="1">Normal</option>
+											<option value="2">Accélérér</option>
+											<option value="3">Cours de soir</option>
+
+										</select>
+
+									</div>
+
+									<div class="form-group">
+										<label for="id_national">N° identification nationale:</label>
+										<input class="form-control"  id="id_national" maxlength="255" required="required" name="phone" type="number">
+
+									</div>
+
+									<div class="form-group">
+										<label for="type_cours">Type de paiement</label>
+										<select class="form-control" id="typepaiement" name="type paiement">
+											<option value="1">VISA</option>
+											<option value="2">MasterCard</option>
+											<option value="3">PayPal</option>
+											<option value="4">CIB</option>
+										</select>
+
+									</div>
+									<div class="inscrInfos">
+
+										<div id="descInfo">
+											<div class="container2">
+												<h4 id="prixFormation">Prix de formation</h4>
+
+												<h4 id="prixInscription">Prix de l'inscription</h4>
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="pull-right">
+										<button type="button" class="btn btn-success" onclick="submitTwo()" >
+											Send
+										</button>
+									</div>
+								</form>
+
+							</div>
+						</div>
+
+						<div style="padding: 10px;">
 
 						</div>
 
 					</div>
 				</div>
-
 			</div>
-		</div>
 
-		<div class="clear"></div>
-		<footer>
-			<ul>
-				<li>
-					<a href="#"><img src="images/fbook.png" /></a>
-				</li>
-				<li>
-					<a href="#"><img src="images/twitter.png" /></a>
-				</li>
-				<li>
-					<a href="#"><img src="images/gplus.png" /></a>
-				</li>
-				<li>
-					<a href="#"><img src="images/youtube.png" /></a>
-				</li>
-			</ul>
-			<h4>© Tous droits réservés 2014-2015</h4>
-		</footer>
+			<footer style="position: absolute;top: 720px;width: 100%;height: 120px;">
+				<ul>
+					<li>
+						<a href="#"><img src="images/fbook.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/twitter.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/gplus.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/youtube.png" /></a>
+					</li>
+				</ul>
+				<h4>© Tous droits réservés 2014-2015</h4>
+			</footer>
 		</div>
+		<script type="text/javascript">
+			$('a#accueil').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
 
+					document.location.href = 'acceuil.html';
+				}, 1000);
+			});
+			$('a#news').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'news.html';
+				}, 1000);
+			});
+			$('a#cours').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'cours.html';
+				}, 1000);
+			});
+			$('a#telec').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'telechargement.html';
+				}, 1000);
+			});
+		
+			$('a#contact').click(function() {
+				$('.flipbook').turn("page", 1);
+				setTimeout(function() {
+
+					document.location.href = 'contact.html';
+				}, 1000);
+			});
+
+			function submitTwo() {
+				$("#btn1").trigger("click");
+				//				document.getElementById("form1").submit();
+				if ($("#form1").validate() && $("#form2").validate())
+					document.getElementById("form2").submit();
+
+			}
+
+			function afficherPrix() {
+				var type = document.getElementById("typeCours");
+				var choixCours = document.getElementById("choixCours");
+				var pF = document.getElementById("prixFormation");
+				var pI = document.getElementById("prixInscription");
+
+				var x = 3000 * (type.selectedIndex + 2) + (choixCours.selectedIndex + 3) * 1000;
+				pF.innerHTML = "Prix de formation         " + x;
+				pI.innerHTML = "Prix de l'inscription     " + 0.1 * x;
+
+			}
+
+			function loadApp() {
+
+				// Create the flipbook
+
+				$('.flipbook').turn({
+					// Width
+
+					width : 922,
+
+					// Height
+
+					height : 600,
+
+					duration : 1500,
+
+					// Elevation
+
+					elevation : 50,
+
+					// Enable gradients
+
+					gradients : true,
+
+					// Auto center this flipbook
+
+					autoCenter : true
+
+				});
+
+				setTimeout(function() {
+
+					$('.flipbook').turn("next");
+
+				}, 1000);
+
+			}
+
+			// Load the HTML4 version if there's not CSS transform
+
+			yepnope({
+				test : Modernizr.csstransforms,
+				yep : ['lib/turn.js'],
+				nope : ['lib/turn.html4.min.js'],
+				both : ['css/basic.css'],
+				complete : loadApp
+			});
+		</script>
 	</body>
 </html>
