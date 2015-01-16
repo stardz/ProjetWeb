@@ -139,28 +139,25 @@ footer h4{
 /*******************************************************/
 /*****************************************************************/
 /*Div Secondaire*/
-.divSecondaire {
-	float: right;
-	list-style-type: none;
-	background: #E1F5FE;
-	border-radius: 2px;
-	width: 25%;
-	display: block;
-	margin-right: 8%;
-}
+
 
 .offres {
 	background: rgba(255,255,255,0.7);
 	border-top: 3px solid rgba(200,20,0,0.8);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	padding: 0px;
-	padding-bottom: 90px;
+
+	width:88%;
+	height: 90%;
+	margin: 4%;
 }
 
 .enRelation {
 	background: rgba(255,255,255,0.7);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	margin-top: 30px;
+	border-top: 3px solid rgba(20,20,200,0.8);
+	width:88%;
+	height: 90%;
+	margin: 4%;
 }
 
 .divSecondaire > :nth-child(2) {
