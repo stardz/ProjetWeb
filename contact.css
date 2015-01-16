@@ -5,6 +5,7 @@ body {
 	background-color: #E1F5FE;
 	font-size: 14px;
 	line-height: 1.428571429;
+	overflow: scroll;
 	color: #333;
 }
 #logoSpace {
@@ -29,7 +30,6 @@ header {
 	width: 100%;
 	z-index: 10;
 }
-
 
 nav {
 	position: fixed;
@@ -61,7 +61,7 @@ nav ul li:hover {
 footer {
 	background-color: #03A9F4;
 	height: 100px;
-	padding-left: 37%
+	padding-left: 37%;
 }
 footer ul li {
 
@@ -81,46 +81,27 @@ footer h4 {
 	padding-top: 0px;
 	margin-top: 0px;
 }
-form {
-		padding-top:20px;
 
+form {
+	padding-top: 20px;
 	display: block;
 	margin-top: 0em;
-		padding-left:50px;
-
+	padding-left: 50px;
 }
 
 /*
  * Divs modules
  */
 /*Contenaire Principal*/
-#contactContainer {
-	width: 100%;
-	height: 100%;
-	padding-top: 100px;
-}
-
-/* Div Principal*/
-.divPrincipal {
-
-	float: left;
-	margin-right: 20px;
-	width: 45%;
-	margin-left: 8%;
-	background: rgba(255,255,255,0.7);
-	list-style-type: none;
-	background: #E1F5FE;
-	border-radius: 2px;
-}
 
 .contactInfos {
 
 	background: rgba(255,255,255,0.7);
 	border-top: 3px solid rgba(20,20,200,0.8);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	padding-top: 15px;
-		padding-bottom: 15px;
-
+	width: 88%;
+	height: 90%;
+	margin: 4%;
 }
 
 /*******************************************************/
@@ -140,7 +121,9 @@ form {
 	background: rgba(255,255,255,0.7);
 	border-top: 3px solid rgba(200,20,0,0.8);
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);
-	padding: 10px;
+	width: 88%;
+	height: 90%;
+	margin: 4%;
 }
 
 #descFormulaire {
@@ -152,19 +135,20 @@ form {
 .container {
 	font-family: LigthItalicGoogle;
 	list-style-type: none;
-		padding-left: 20px;
-
 }
-.imagBack {
 
-}
 .textDesc {
 	font-family: CondensedGoogle;
 	padding-left: 20px;
 }
 .titleDesc {
 	font-family: LigthItalicGoogle;
-	padding-left: 20px;
+	padding-left: 8%;
+	background: #2196F3;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 100%;
 }
 
 /*
@@ -194,7 +178,7 @@ form {
 
 .form-control {
 	display: block;
-	width: 100%;
+	width: 92%;
 	height: 20px;
 	padding: 6px 12px;
 	font-size: 14px;
@@ -248,11 +232,11 @@ textarea {
 	border-color: #4cae4c;
 }
 .btn {
-	
+
 	display: inline-block;
 	padding: 6px 12px;
-	margin-left:90%;
-	margin-bottom: 10px ;
+	margin-left: 75%;
+	margin-bottom: 10px;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 1.428571429;
@@ -268,12 +252,13 @@ textarea {
 	user-select: none;
 }
 
-
-
-	textarea.form-control {
-height: auto;
+textarea.form-control {
+	height: auto;
 }
 
-.container h4,.container h3,.container h2{
-	color:#0288D1;
+.container2 h3, p, h4 {
+	margin-left: 10%;
+}
+.container2 h4, .container2 h3, .container2 h2 {
+	color: #0288D1;
 }
