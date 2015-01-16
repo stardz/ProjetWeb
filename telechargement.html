@@ -10,6 +10,7 @@
 
 		<script>
 			function showFileChooser() {
+				$('.flipbook').turn('page', 3)
 				var user = document.getElementById('user').value;
 				var pass = document.getElementById('pass').value;
 				if (user == "user" && pass == "123") {
@@ -34,7 +35,16 @@
 				unode.appendChild(textNode);
 				unode.href = "" + document.getElementById('fileInput').value;
 				node.appendChild(unode);
-				listeOL[indice].appendChild(node);
+				if ( typeof localStorage === "undefined" || localStorage === null) {
+					var LocalStorage = require('node-localstorage').LocalStorage;
+					localStorage = new LocalStorage('./scratch');
+				}
+
+				localStorage.setItem(indice, document.getElementById('fileInput').value);
+				alert(localStorage.getItem(indice));
+				/*localStorage.setItem(indice + "", node);
+				*/
+				//listeOL[indice].appendChild(localStorage.getItem(indice));
 			}
 		</script>
 
@@ -79,6 +89,7 @@
 					<div class="flipbook">
 						<div style="padding-top:5px; background:url(images/e-learning.jpg);"></div>
 						<div style="padding: 10px;">
+
 							<div class="typeDiv" id="cours">
 								<div id="enteteCours">
 									<h1 >Cours :</h1>
@@ -4179,65 +4190,65 @@
 							</div>
 
 						</div>
-						<div style="padding: 10px;">
-							<div>
-								Admin Zone :
-								User :
-								<input id="user" type="text"/>
-								Password :
-								<input id="pass" type="text"/>
-								<input type="button" value="Login" onclick="showFileChooser()"/>
-								<div id="divFileChooser" style="visibility:hidden;">
-									Ajouter un fichier dans
-									<select id="rubriqueSelec">
-										<option>Cours</option>
-										<option>TPs</option>
-										<option>Projets</option>
-										<option>Outils</option>
-										<option>Documentation</option>
-										<option>Exercices</option>
-									</select>
-									<select id="moduleSelec">
-										<option>MPSI</option>
-										<option>TICO</option>
-										<option>WEB</option>
-										<option>SIAD</option>
-										<option>ANAD</option>
-										<option>BDD</option>
-									</select>
-									<select id="coursSelect">
-										<option>Cours 1</option>
-										<option>Cours 2</option>
-										<option>Cours 3</option>
-										<option>Cours 4</option>
-										<option>Cours 5</option>
-									</select>
-									<input id="fileInput" type="file" value="Choisir un fichier" />
-									<input type="button" value="valider" onclick="valider()"/>
-								</div>
-							</div>
-
-						</div>
 
 					</div>
 				</div>
 			</div>
-			<footer style="position: absolute;top: 720px;width: 100%;height: 120px;">
-				<ul>
-					<li>
-						<a href="#"><img src="images/fbook.png" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/twitter.png" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/gplus.png" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/youtube.png" /></a>
-					</li>
-				</ul>
-				<h4>آ© Tous droits rأ©servأ©s 2014-2015</h4>
+			<footer style="position: absolute;top: 720px;width: 100%;height: 120px;vertical-align: top;">
+				<div style="display: inline-block;">
+					<ul>
+						<li>
+							<a href="#"><img src="images/fbook.png" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/twitter.png" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/gplus.png" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/youtube.png" /></a>
+						</li>
+					</ul>
+					<h4>آ© Tous droits rأ©servأ©s 2014-2015</h4>
+				</div>
+
+				<div style="display: inline-block;margin-left: 10%;vertical-align: top;margin-top: 2%;">
+					Admin Zone :
+					User :
+					<input id="user" type="text"/>
+					Password :
+					<input id="pass" type="text"/>
+					<input type="button" value="Login" onclick="showFileChooser()"/>
+					<div id="divFileChooser" style="visibility:hidden;">
+						Ajouter un fichier dans
+						<select id="rubriqueSelec">
+							<option>Cours</option>
+							<option>TPs</option>
+							<option>Projets</option>
+							<option>Outils</option>
+							<option>Documentation</option>
+							<option>Exercices</option>
+						</select>
+						<select id="moduleSelec">
+							<option>MPSI</option>
+							<option>TICO</option>
+							<option>WEB</option>
+							<option>SIAD</option>
+							<option>ANAD</option>
+							<option>BDD</option>
+						</select>
+						<select id="coursSelect">
+							<option>Cours 1</option>
+							<option>Cours 2</option>
+							<option>Cours 3</option>
+							<option>Cours 4</option>
+							<option>Cours 5</option>
+						</select>
+						<input id="fileInput" type="file" value="Choisir un fichier" />
+						<input type="button" value="valider" onclick="valider()"/>
+					</div>
+				</div>
 			</footer>
 		</div>
 
@@ -4263,7 +4274,6 @@
 					document.location.href = 'cours.html';
 				}, 1000);
 			});
-		
 			$('a#inscr').click(function() {
 				$('.flipbook').turn("page", 1);
 				setTimeout(function() {
@@ -4278,6 +4288,7 @@
 					document.location.href = 'contact.html';
 				}, 1000);
 			});
+
 			function loadApp() {
 
 				// Create the flipbook
@@ -4289,7 +4300,7 @@
 
 					// Height
 
-					height : 600,
+					height : 500,
 
 					duration : 1500,
 
