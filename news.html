@@ -44,7 +44,7 @@
 				</ul>
 			</nav>
 			<div class="flipbook-viewport" style="position: absolute;top:70px;">
-				<div class="container">
+				<div class="container" style="visibility: hidden;" id="container">
 					<div class="flipbook">
 						<div style="padding-top:5px; background:url(images/e-learning.jpg);"></div>
 						<div style="padding: 10px;background:url(images/back.jpg);">
@@ -284,6 +284,9 @@
 
 				});
 
+				var v=	document.getElementById('container');
+						v.style.visibility = "visible";		
+						
 				setTimeout(function() {
 
 					$('.flipbook').turn("next");
