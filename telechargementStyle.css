@@ -73,12 +73,15 @@ nav ul li:hover{
 	width: 90%;
 	margin-left: 15px;
 	height: 80%;
+	margin-top: 8.5%;
 	box-shadow: 0px 0px 5px #888888;
 	margin-bottom: 20px;
 }
+
 .typeDiv div h1 {
 	margin: 0px;
 }
+
 #enteteCours {
 	height: 100px;
 	color: white;
@@ -86,6 +89,7 @@ nav ul li:hover{
 	style: none;
 	vertical-align: center;
 }
+
 #enteteCours h1 {
 	height: 100px;
 	color: white;

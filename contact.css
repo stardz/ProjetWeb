@@ -151,7 +151,7 @@ form {
 	font-size: 100%;
 }
 
-#sub1{
+#btn1{
 	display: none;
 }
 /*
@@ -180,7 +180,7 @@ form {
 }
 
 .form-control {
-	display: block;
+
 	width: 92%;
 	height: 20px;
 	padding: 6px 12px;

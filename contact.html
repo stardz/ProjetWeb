@@ -5,6 +5,7 @@
 		<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 		<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 		<link href="contact.css" rel="stylesheet" type="text/css" />
+		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
 
 	</head>
 
@@ -21,7 +22,7 @@
 				</div>
 			</header>
 			<nav>
-					<ul>
+				<ul>
 					<li>
 						<a id="accueil" nohref onclick="" class="navCel">Acceuil</a>
 					</li>
@@ -168,7 +169,7 @@
 
 									</div>
 									<div class="pull-right">
-										<button type="submit" class="btn btn-success" id="sub1">
+										<button type="submit" class="btn btn-success" id="btn1">
 											Send
 										</button>
 									</div>
@@ -187,7 +188,7 @@
 									</div>
 
 									<div class="pull-right">
-										<button  type="button"  class="btn btn-success" onclick="submitTwo()">
+										<button type="button" class="btn btn-success" onclick="submitTwo()" >
 											Send
 										</button>
 									</div>
@@ -223,7 +224,53 @@
 			</footer>
 		</div>
 		<script type="text/javascript">
-	$('a#accueil').click(function() {
+			$(function() {
+
+				// Setup form validation on the #register-form element
+				$("form").validate({
+
+					// Specify the validation rules
+					rules : {
+						first_name : "required",
+						last_name : "required",
+						adresse_postale : "required",
+						email : {
+							required : true,
+							email : true
+						},
+						phone : "required",
+						organization : "required",
+						country : "required",
+						message : {
+							required : true,
+							minlength : 5,
+							maxlength : 500
+						},
+
+					},
+
+					// Specify the validation error messages
+					messages : {
+						last_name : "Entrez votre nom SVP!",
+						first_name : "Entrez votre prénom SVP!",
+						adresse_postale : "Entrez votre adresse postale SVP!",
+						email : "Entrez une adresse e-mail valide SVP! ",
+						phone : "Entrez votre numéro de téléphone SVP!",
+						organization : "Entrer votre organisation SVP!",
+						country : "Entrer votre pays SVP!",
+						message : "La longuere minimale du message est 30 caractère!"
+
+					},
+
+					submitHandler : function(form) {
+						form.submit();
+						alert(66);
+					}
+				});
+
+			});
+
+			$('a#accueil').click(function() {
 				$('.flipbook').turn("page", 1);
 				setTimeout(function() {
 
@@ -255,19 +302,18 @@
 				$('.flipbook').turn("page", 1);
 				setTimeout(function() {
 
-					
 					document.location.href = 'inscription.html';
 				}, 1000);
 			});
 
 			function submitTwo() {
-				$("#sub1").trigger("click");
-//				document.getElementById("form1").submit();
-	//			document.getElementById("form2").submit();
+				$("#btn1").trigger("click");
+				//				document.getElementById("form1").submit();
+				//			document.getElementById("form2").submit();
 
 			}
 
-				function loadApp() {
+			function loadApp() {
 
 				// Create the flipbook
 
@@ -279,8 +325,8 @@
 					// Height
 
 					height : 600,
-					
-					duration: 1500,
+
+					duration : 1500,
 
 					// Elevation
 

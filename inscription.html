@@ -6,7 +6,47 @@
 		<meta charset="utf-8">
 		<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 		<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+		<script type="text/javascript" src="map.js"></script>
 		<link href="inscription.css" rel="stylesheet" type="text/css" />
+		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+		<style>
+			html, body, #map-canvas {
+				height: 100%;
+				margin: 0px;
+				padding: 0px
+			}
+
+			#map-canvas {
+				height: 58%;
+				width: 90%;
+				margin: 2% 2% 5% 5%;
+			}
+
+			#first {
+				margin: 2%;
+				margin-left: 5%;
+			}
+
+			#mapContainer {
+
+				height: 100%;
+				width: 68%;
+				margin: 5%;
+				margin-left: 16%;
+				margin-top: 55%;
+				position: absolute;
+				box-shadow: 0px 0px 5px #888888;
+			}
+
+			#position label {
+				margin-right: 4%;
+			}
+			#position input {
+				margin-right: 4%;
+			}
+		</style>
 
 	</head>
 
@@ -57,26 +97,19 @@
 									<input type="hidden" name="csrfmiddlewaretoken" value="AF7S7DimieUWZ1G486h7g4HFK8AXlSie">
 
 									<div class="form-group">
-										<label for="choix_cours">Choisir le cours</label>
-										<select class="form-control" id="choixCours" name="wilaya" onchange="afficherPrix()">
-											<option value="1">BDD avancées</option>
-											<option value="2">Analyse des données</option>
-											<option value="3">Systemes AD</option>
-											<option value="4">Management des changements</option>
-											<option value="5">TIC en Organisation</option>
-											<option value="6" selected="selected">Developpement WEB</option>
-										</select>
+										<label for="id_national">N° identification nationale:</label>
+										<input class="form-control"  id="id_national" maxlength="255" required="required" name="id" type="number">
 
 									</div>
 
 									<div class="form-group">
-										<label for="id_first_name">First name:</label>
+										<label for="id_first_name">Prénom:</label>
 										<input class="form-control" id="id_first_name" required="required"  maxlength="255" name="first_name" type="text">
 
 									</div>
 
 									<div class="form-group">
-										<label for="id_last_name">Last name:</label>
+										<label for="id_last_name">Nom:</label>
 										<input class="form-control" id="id_last_name" required="required" maxlength="255" name="last_name" type="text">
 
 									</div>
@@ -131,6 +164,18 @@
 									</div>
 
 									<div class="form-group">
+										<label for="choix_cours">Choisir le cours</label>
+										<select class="form-control" id="choixCours" name="wilaya" onchange="afficherPrix()">
+											<option value="1">BDD avancées</option>
+											<option value="2">Analyse des données</option>
+											<option value="3">Systemes AD</option>
+											<option value="4">Management des changements</option>
+											<option value="5">TIC en Organisation</option>
+											<option value="6" selected="selected">Developpement WEB</option>
+										</select>
+
+									</div>
+									<div class="form-group">
 										<label for="type_cours">Type de cours</label>
 										<select class="form-control" id="typeCours" name="type cours" onchange="afficherPrix()">
 											<option value="1">Normal</option>
@@ -138,12 +183,6 @@
 											<option value="3">Cours de soir</option>
 
 										</select>
-
-									</div>
-
-									<div class="form-group">
-										<label for="id_national">N° identification nationale:</label>
-										<input class="form-control"  id="id_national" maxlength="255" required="required" name="phone" type="number">
 
 									</div>
 
@@ -185,10 +224,32 @@
 						</div>
 
 					</div>
+
 				</div>
+
 			</div>
 
-			<footer style="position: absolute;top: 720px;width: 100%;height: 120px;">
+			<div id="mapContainer">
+				<div class="titreChapitre">
+					<h2 class="titleText">Géolocalisation</h2>
+				</div>
+				<div class="titreExo">
+					<h3 class="titleText">Rechercher le centre le plus proche</h3>
+				</div>
+				<div id="first">
+
+					<input type="checkbox" onclick="myPositionActivate()" id="check_position" />
+					<label class="back" style="font-size:1.0em;height:26px;margin-right: 2%;">Ma position actuelle</label>
+					<div id="position" style="visibility: visible;margin-top: 15px;margin-bottom: 15px;">
+						<label>Position : </label>
+						<input type="number" prompt="Longitude" placeholder="Longitude..." id="longitude"/>
+						<input type="number" prompt="Latitude" placeholder="Latitude..." id="latitude"/>
+					</div>
+					<input type="submit" value="Rechercher" onclick="calcRoute()" />
+				</div>
+				<div id="map-canvas"></div>
+			</div>
+			<footer style="position: absolute;top: 235%;width: 100%;height: 120px;">
 				<ul>
 					<li>
 						<a href="#"><img src="images/fbook.png" /></a>
@@ -206,7 +267,58 @@
 				<h4>© Tous droits réservés 2014-2015</h4>
 			</footer>
 		</div>
+
 		<script type="text/javascript">
+			$(function() {
+
+				// Setup form validation on the #register-form element
+				$("form").validate({
+
+					// Specify the validation rules
+					rules : {
+						id : "required",
+						first_name : "required",
+						last_name : "required",
+						dnaiss : {
+							required : true,
+							date : true
+						},
+						adresse_postale : "required",
+						email : {
+							required : true,
+							email : true
+						},
+						phone : "required",
+						situation_fam : "required",
+						cours_choix : "required",
+						type_cours : "required",
+						typ_carte : "required"
+					},
+
+					// Specify the validation error messages
+					messages : {
+						id : "Entrez le numéro de votre carte SVP!",
+						last_name : "Entrez votre nom SVP!",
+						first_name : "Entrez votre prénom SVP!",
+						dnaiss : "Entrez votre date de naissance SVP!",
+						adresse_postale : "Entrez votre adresse postale SVP!",
+						email : "Entrez une adresse e-mail valide SVP! ",
+						phone : "Entrez votre numéro de téléphone SVP!",
+						situation_fam : "Sélectionnez votre situation familiale SVP!",
+						cours_choix : "Choisissez un module SVP!",
+						type_cours : "Choisissez un cours SVP!",
+						typ_carte : "Sélectionnez le type de votre carte crédit SVP!"
+
+					},
+
+					submitHandler : function(form) {
+						form.submit();
+						alert(66);
+					}
+				});
+
+			});
+
 			$('a#accueil').click(function() {
 				$('.flipbook').turn("page", 1);
 				setTimeout(function() {
@@ -235,7 +347,7 @@
 					document.location.href = 'telechargement.html';
 				}, 1000);
 			});
-		
+
 			$('a#contact').click(function() {
 				$('.flipbook').turn("page", 1);
 				setTimeout(function() {
@@ -247,9 +359,9 @@
 			function submitTwo() {
 				$("#btn1").trigger("click");
 				//				document.getElementById("form1").submit();
-				if ($("#form1").validate() && $("#form2").validate())
-					document.getElementById("form2").submit();
-
+				/*if ($("#form1").validate() && $("#form2").validate())
+				 document.getElementById("form2").submit();
+				 */
 			}
 
 			function afficherPrix() {

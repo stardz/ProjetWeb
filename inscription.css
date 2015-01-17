@@ -92,17 +92,14 @@ form {
  * Divs modules
  */
 
-
-
 .inscrInfos {
-/*
-	background: rgba(255,255,255,0.7);
-	border-top: 3px solid rgba(20,20,200,0.8);
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.9);*/
+	/*
+	 background: rgba(255,255,255,0.7);
+	 border-top: 3px solid rgba(20,20,200,0.8);
+	 box-shadow: 0px 1px 3px rgba(0,0,0,0.9);*/
 	width: 80%;
 	height: 10%;
-
-	float:left;
+	float: left;
 }
 
 /*******************************************************/
@@ -117,8 +114,6 @@ form {
 	height: 90%;
 	margin: 4%;
 }
-
-
 
 .textDesc {
 	font-family: CondensedGoogle;
@@ -178,7 +173,7 @@ form {
 	height: 35px;
 }
 .form-control {
-	display: block;
+
 	width: 90%;
 	height: 20px;
 	padding: 6px 12px;
@@ -206,6 +201,9 @@ body {
 	margin-bottom: 15px;
 }
 
+#map-canvas {
+	display: block;
+}
 div {
 	display: block;
 }
@@ -275,6 +273,30 @@ select {
 	color: #0288D1;
 }
 
-#btn1{
+#btn1 {
 	display: none;
+}
+
+.titreChapitre {
+	text-align: center;
+	font-family: CondensedGoogle;
+	height: 50px;
+	background-color: #3F51B5;
+	color: white;
+}
+.titleText {
+	margin: 0px;
+	padding: 0px;
+	line-height: 50px;
+	vertical-align: center;
+}
+
+.titreExo {
+	text-align: center;
+	font-family: ThinGoogle;
+	color: white;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #2196F3;
 }
