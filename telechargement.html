@@ -2,14 +2,29 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>acceuil</title>
-		<link href="telechargementStyle.css" rel="stylesheet" type="text/css" />
+		<title>Téléchargement</title>
 
 		<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 		<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+		<link href="telechargementStyle.css" rel="stylesheet" type="text/css" />
 
 		<script>
-		
+			function restoreAddesLi() {
+				//localStorage.clear();
+				var listeOL = document.getElementsByClassName('addClass');
+				for ( i = 0; i <= localStorage.length - 1; i++) {
+					key = localStorage.key(i);
+					var textNode = document.createTextNode(localStorage.getItem(key).split('\\').pop());
+					var node = document.createElement("LI");
+					var unode = document.createElement("A");
+					node.className = "file";
+					unode.appendChild(textNode);
+					unode.href = "" + localStorage.getItem(key);
+					node.appendChild(unode);
+					listeOL[parseInt(key.split("-")[0])].appendChild(node);
+				}
+			}
+
 			function showFileChooser() {
 				$('.flipbook').turn('page', 3)
 				var user = document.getElementById('user').value;
@@ -34,24 +49,31 @@
 				var unode = document.createElement("A");
 				node.className = "file";
 				unode.appendChild(textNode);
-				unode.href = "" + document.getElementById('fileInput').value;
+				unode.href = "upload\\" + document.getElementById('fileInput').value.split('\\').pop();
 				node.appendChild(unode);
-				if ( typeof localStorage === "undefined" || localStorage === null) {
-					var LocalStorage = require('node-localstorage').LocalStorage;
-					localStorage = new LocalStorage('./scratch');
-				}
-
-				localStorage.setItem(indice, document.getElementById('fileInput').value);
-				alert(localStorage.getItem(indice));
+				//alert(indice+"-"+listeOL[indice].children.length);
+				localStorage.setItem(indice + "-" + listeOL[indice].children.length, "upload\\" + document.getElementById('fileInput').value.split('\\').pop());
+				listeOL[indice].appendChild(node);
 				/*localStorage.setItem(indice + "", node);
 				*/
 				//listeOL[indice].appendChild(localStorage.getItem(indice));
+			}
+
+			function itemsStart(a) {
+				var items = new Array();
+				for (var i = 1; i < localStorage.length; i++) {
+					if (localStorage.key(i).split("-")[0] === a) {
+						alert(localStorage.key(i));
+						items.push(localStorage.getItem(localStorage.key(i)));
+					}
+				}
+				return items;
 			}
 		</script>
 
 	</head>
 
-	<body>
+	<body onload="restoreAddesLi()" style="overflow: scroll;">
 
 		<div id="backCenter">
 
@@ -66,22 +88,22 @@
 			<nav>
 				<ul>
 					<li>
-						<a id="accueil" nohref onclick="" class="navCel">Acceuil</a>
+						<a id="accueil" nohref onclick="" class="navCel" style="cursor: hand;cursor: pointer;">Acceuil</a>
 					</li>
 					<li>
-						<a id="news" nohref onclick="" class="navCel">News</a>
+						<a id="news" nohref onclick="" class="navCel" style="cursor: hand;cursor: pointer;">News</a>
 					</li>
 					<li>
-						<a id="cours" nohref onclick="" class="navCel">Cours</a>
+						<a id="cours" nohref onclick="" class="navCel" style="cursor: hand;cursor: pointer;">Cours</a>
 					</li>
 					<li>
-						<a id="telec" nohref onclick="" class="navCel">Telechargement</a>
+						<a id="telec" nohref onclick="" class="navCel" style="cursor: hand;cursor: pointer;">Telechargement</a>
 					</li>
 					<li>
-						<a id="inscr" nohref onclick="" class="navCel">Inscriptions</a>
+						<a id="inscr" nohref onclick="" class="navCel" style="cursor: hand;cursor: pointer;">Inscriptions</a>
 					</li>
 					<li>
-						<a id="contact" nohref onclick="" class="navCel">Contacts</a>
+						<a id="contact" nohref onclick="" class="navCel" style="cursor: hand;cursor: pointer;">Contacts</a>
 					</li>
 				</ul>
 			</nav>
@@ -4211,18 +4233,19 @@
 							<a href="#"><img src="images/youtube.png" /></a>
 						</li>
 					</ul>
-					<h4>آ© Tous droits rأ©servأ©s 2014-2015</h4>
+					<h4>© Tous droits réservés 2014-2015</h4>
 				</div>
 
-				<div style="display: inline-block;margin-left: 10%;vertical-align: top;margin-top: 2%;">
-					Admin Zone :
+				<div style="display: inline-block;margin-left: 8%;vertical-align: top;margin-top: 1%;font-family: CondensedGoogle;">
+					<span style="margin-right: 5%;">Admin Zone :</span> 
+				
 					User :
-					<input id="user" type="text"/>
+					<input id="user" type="text" style="margin-left:1% ;margin-right: 1%;"/>
 					Password :
-					<input id="pass" type="text"/>
+					<input id="pass" type="text" style="margin-left:1% ;margin-right: 1%;"/>
 					<input type="button" value="Login" onclick="showFileChooser()"/>
-					<div id="divFileChooser" style="visibility:hidden;">
-						Ajouter un fichier dans
+					<div id="divFileChooser" style="visibility:hidden;margin-top: 2%;">
+						Ajouter un fichier  :
 						<select id="rubriqueSelec">
 							<option>Cours</option>
 							<option>TPs</option>
@@ -4246,9 +4269,12 @@
 							<option>Cours 4</option>
 							<option>Cours 5</option>
 						</select>
-						<input id="fileInput" type="file" value="Choisir un fichier" />
-						<input type="button" value="valider" onclick="valider()"/>
+						<span>
+<input id="fileInput" type="file" value="Choisir un fichier" />
+					<input type="button" value="valider" onclick="valider()"/>
+					</span>
 					</div>
+					
 				</div>
 			</footer>
 		</div>
@@ -4301,7 +4327,7 @@
 
 					// Height
 
-					height : 500,
+					height : 600,
 
 					duration : 1500,
 

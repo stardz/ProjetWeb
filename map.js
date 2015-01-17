@@ -46,14 +46,14 @@ function initialize() {
 		map : map,
 		animation : google.maps.Animation.DROP,
 		title : "Ecole National superieure d'informatique",
-		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Cours1 </h4><h4>Cours2 </h4><h4>Cours3 </h4><h4>Cours4 </h4></p>' + '</div>' + '</div>',
+		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Analyse des données </h4><h4>BDD avancées </h4><h4>Systemes AD </h4></p>' + '</div>' + '</div>',
 		position : positionESI
 	});
 
 	marker_bouraoui = new google.maps.Marker({
 		map : map,
 		animation : google.maps.Animation.DROP,
-		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Cours1 </h4><h4>Cours2 </h4><h4>Cours3 </h4><h4>Cours4 </h4></p>' + '</div>' + '</div>',
+		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Developpement WEB </h4><h4>Management des changements </h4></p>' + '</div>' + '</div>',
 		title : "Cité universitaire Bouraoui Ammar",
 		position : positionBouraoui
 	});
@@ -62,7 +62,7 @@ function initialize() {
 		map : map,
 		animation : google.maps.Animation.DROP,
 		title : "Bab Ezzouar",
-		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Cours1 </h4><h4>Cours2 </h4><h4>Cours3 </h4><h4>Cours4 </h4></p>' + '</div>' + '</div>',
+		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Management des changements </h4><h4>Systemes AD </h4><h4>BDD avancées </h4><h4>Analyse des données </h4></p>' + '</div>' + '</div>',
 		position : positionBab_Ezzouar
 
 	});
@@ -71,7 +71,7 @@ function initialize() {
 		map : map,
 		animation : google.maps.Animation.DROP,
 		title : "Kouba",
-		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Cours1 </h4><h4>Cours2 </h4><h4>Cours3 </h4><h4>Cours4 </h4></p>' + '</div>' + '</div>',
+		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Systemes AD </h4><h4>Analyse des données </h4><h4>Management des changements </h4></p>' + '</div>' + '</div>',
 		position : positionKouba
 	});
 
@@ -79,7 +79,7 @@ function initialize() {
 		map : map,
 		animation : google.maps.Animation.DROP,
 		title : "Deli Ibrahim",
-		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Cours1 </h4><h4>Cours2 </h4><h4>Cours3 </h4><h4>Cours4 </h4></p>' + '</div>' + '</div>',
+		infos : '<div style="width:200px; height:100px id="content">' + '<h1 id="firstHeading" class="firstHeading">Cours</h1>' + '<p><h4>Systemes AD </h4><h4>BDD avancées </h4><h4>Management des changements </h4><h4>Analyse des données </h4></p>' + '</div>' + '</div>',
 		position : positionDeli_Ibrahim
 
 	});

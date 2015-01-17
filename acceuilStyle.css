@@ -2,8 +2,8 @@ body {
 	margin: 0px;
 	padding: 0px;
 	width:100%;
+	overflow:scroll;
 	background-color: #E1F5FE;
-	overflow: scroll;
 }
 .refsCours{
 	color:white;
@@ -50,6 +50,7 @@ nav ul li{
 	font-family: RegularGoogle;
 	font-size:large;
 	font-size:20px;
+	
 	text-decoration:none;
 	list-style: none;
 }
@@ -228,6 +229,7 @@ footer h4{
 	padding-left: 45px;
 	padding-top: 0px; 
 	margin-top: 0px;
+	
 }
 /*
  * Details des cours

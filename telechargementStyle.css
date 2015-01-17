@@ -3,7 +3,8 @@ body {
 	padding: 0px;
 	width:100%;
 	background-color: #E1F5FE;
-	overflow: scroll;	
+	overflow: scroll;
+		
 }
 .refsCours{
 	color:white;
@@ -68,7 +69,7 @@ nav ul li:hover{
 	background-color: white;
 }
 .typeDiv {
-	overflow: hidden;
+	overflow: scroll;
 	display: inline-block;
 	width: 90%;
 	margin-left: 15px;
@@ -296,7 +297,7 @@ li input:checked + ol > li:last-child {
 footer{
 	background-color: #03A9F4;
 	height: 100px;
-	padding-left: 37%;
+	padding-left: 10%;
 }
 footer ul li{
 	
